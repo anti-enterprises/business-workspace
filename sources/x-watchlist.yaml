@@ -1,0 +1,5271 @@
+schema_version: "1"
+strategic_role: industry_signal
+sources:
+  # X (Twitter) follow graph imported from data export 2026-05-23.
+  # Two URL shapes: handle form (https://x.com/<handle>) where the archive's
+  # interaction history yielded a screen_name, and ID form
+  # (https://x.com/i/user/<id>) for the rest. Both shapes are handled by
+  # execution/apis/x-apify.ts via the Apify actor's startUrls input.
+
+  - id: src-x-alex-prompter
+    url: https://x.com/alex_prompter
+    label: "Alex Prompter (@alex_prompter)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 8 prior interactions in archive."
+
+  - id: src-x-alliekmiller
+    url: https://x.com/alliekmiller
+    label: "Allie K. Miller (@alliekmiller)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 8 prior interactions in archive."
+
+  - id: src-x-omarsar0
+    url: https://x.com/omarsar0
+    label: "elvis (@omarsar0)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 8 prior interactions in archive."
+
+  - id: src-x-rohanpaul-ai
+    url: https://x.com/rohanpaul_ai
+    label: "Rohan Paul (@rohanpaul_ai)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 8 prior interactions in archive."
+
+  - id: src-x-technmak
+    url: https://x.com/techNmak
+    label: "Tech with Mak (@techNmak)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 6 prior interactions in archive."
+
+  - id: src-x-tom-doerr
+    url: https://x.com/tom_doerr
+    label: "Tom Dörr (@tom_doerr)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 6 prior interactions in archive."
+
+  - id: src-x-workflowwhisper
+    url: https://x.com/WorkflowWhisper
+    label: "Alton Syn (@WorkflowWhisper)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 6 prior interactions in archive."
+
+  - id: src-x-chrislaubai
+    url: https://x.com/ChrisLaubAI
+    label: "Chris Laub (@ChrisLaubAI)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 5 prior interactions in archive."
+
+  - id: src-x-dennisonalaja
+    url: https://x.com/DennisOnalaja
+    label: "The Webflow Doctor (@DennisOnalaja)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 5 prior interactions in archive."
+
+  - id: src-x-iruletheworldmo
+    url: https://x.com/iruletheworldmo
+    label: "🍓🍓🍓 (@iruletheworldmo)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 5 prior interactions in archive."
+
+  - id: src-x-connordavis-ai
+    url: https://x.com/connordavis_ai
+    label: "Connor Davis (@connordavis_ai)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 4 prior interactions in archive."
+
+  - id: src-x-godofprompt
+    url: https://x.com/godofprompt
+    label: "God of Prompt (@godofprompt)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 4 prior interactions in archive."
+
+  - id: src-x-dair-ai
+    url: https://x.com/dair_ai
+    label: "DAIR.AI (@dair_ai)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-danifesto
+    url: https://x.com/danifesto
+    label: "Daniel Park (@danifesto)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-datachaz
+    url: https://x.com/DataChaz
+    label: "Charly Wargnier (@DataChaz)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-elonmusk
+    url: https://x.com/elonmusk
+    label: "Elon Musk (@elonmusk)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-hasantoxr
+    url: https://x.com/hasantoxr
+    label: "Hasan Toor (@hasantoxr)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-lioronai
+    url: https://x.com/LiorOnAI
+    label: "Lior Alexander (@LiorOnAI)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-mark-k
+    url: https://x.com/mark_k
+    label: "Mark Kretschmann (@mark_k)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-zocomputer
+    url: https://x.com/zocomputer
+    label: "Zo Computer (@zocomputer)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 3 prior interactions in archive."
+
+  - id: src-x-0thernet
+    url: https://x.com/0thernet
+    label: "ben guo 🏇 (@0thernet)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-alexfinn
+    url: https://x.com/AlexFinn
+    label: "Alex Finn (@AlexFinn)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-bibryam
+    url: https://x.com/bibryam
+    label: "Bilgin Ibryam (@bibryam)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-bryan-johnson
+    url: https://x.com/bryan_johnson
+    label: "Bryan Johnson (@bryan_johnson)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-cursor-ai
+    url: https://x.com/cursor_ai
+    label: "Cursor (@cursor_ai)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-donvito
+    url: https://x.com/donvito
+    label: "Melvin Vivas (@donvito)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-fiddyresearch
+    url: https://x.com/fiddyresearch
+    label: "fiddy (@fiddyresearch)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-foliofed
+    url: https://x.com/foliofed
+    label: "Fed 🐻 (@foliofed)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-garrytan
+    url: https://x.com/garrytan
+    label: "Garry Tan (@garrytan)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-gaurav-mahto18
+    url: https://x.com/gaurav_mahto18
+    label: "Gaurav🦄 (@gaurav_mahto18)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-jayyanginspires
+    url: https://x.com/Jayyanginspires
+    label: "Jay Yang (@Jayyanginspires)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-marcjschmidt
+    url: https://x.com/MarcJSchmidt
+    label: "Marc (@MarcJSchmidt)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-michelleefang
+    url: https://x.com/michelleefang
+    label: "Michelle Fang 🌁 (@michelleefang)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-petergyang
+    url: https://x.com/petergyang
+    label: "Peter Yang (@petergyang)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-saboo-shubham
+    url: https://x.com/Saboo_Shubham_
+    label: "Shubham Saboo (@Saboo_Shubham_)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-shiri-shh
+    url: https://x.com/shiri_shh
+    label: "shirish (@shiri_shh)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-thdxr
+    url: https://x.com/thdxr
+    label: "dax (@thdxr)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-thesamparr
+    url: https://x.com/thesamparr
+    label: "Sam Parr (@thesamparr)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-thomas-ai-geek
+    url: https://x.com/Thomas_AI_geek
+    label: "Thomas Truszkowski | AI Geek (sarcasm included) (@Thomas_AI_geek)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-trq212
+    url: https://x.com/trq212
+    label: "Thariq (@trq212)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-varun-mathur
+    url: https://x.com/varun_mathur
+    label: "Varun (@varun_mathur)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-zephyr-hg
+    url: https://x.com/Zephyr_hg
+    label: "Zephyr (@Zephyr_hg)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 2 prior interactions in archive."
+
+  - id: src-x-avichawla
+    url: https://x.com/_avichawla
+    label: "Avi Chawla (@_avichawla)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-chenglou
+    url: https://x.com/_chenglou
+    label: "Cheng Lou (@_chenglou)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-aiwithjainam
+    url: https://x.com/aiwithjainam
+    label: "Jainam Parmar (@aiwithjainam)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-aiwithmayank
+    url: https://x.com/aiwithmayank
+    label: "Mayank Vora (@aiwithmayank)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-alexwg
+    url: https://x.com/alexwg
+    label: "Dr. Alex Wissner-Gross (@alexwg)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-andrewcurran
+    url: https://x.com/AndrewCurran_
+    label: "Andrew Curran (@AndrewCurran_)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-andrewyng
+    url: https://x.com/AndrewYNg
+    label: "Andrew Ng (@AndrewYNg)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-bencera
+    url: https://x.com/Bencera
+    label: "Ben Cera (@Bencera)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-benjamindekr
+    url: https://x.com/BenjaminDEKR
+    label: "Benjamin De Kraker (@BenjaminDEKR)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-bigaiguy
+    url: https://x.com/bigaiguy
+    label: "Spencer Baggins (@bigaiguy)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-blader
+    url: https://x.com/blader
+    label: "Siqi Chen (@blader)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-brian-scanlan
+    url: https://x.com/brian_scanlan
+    label: "Brian Scanlan (@brian_scanlan)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-businessbarista
+    url: https://x.com/businessbarista
+    label: "Alex Lieberman (@businessbarista)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-cliftonsellers
+    url: https://x.com/CliftonSellers
+    label: "Clifton Sellers (@CliftonSellers)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-codie-sanchez
+    url: https://x.com/Codie_Sanchez
+    label: "Codie Sanchez (@Codie_Sanchez)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-darioamodei
+    url: https://x.com/DarioAmodei
+    label: "Dario Amodei (@DarioAmodei)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-davidsacks
+    url: https://x.com/DavidSacks
+    label: "David Sacks (@DavidSacks)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-deryatr
+    url: https://x.com/DeryaTR_
+    label: "Derya Unutmaz, MD (@DeryaTR_)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-dickiebush
+    url: https://x.com/dickiebush
+    label: "Dickie Bush 🚢 (@dickiebush)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-dotta
+    url: https://x.com/dotta
+    label: "dotta 📎 (@dotta)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-dr-singularity
+    url: https://x.com/Dr_Singularity
+    label: "Dr Singularity (@Dr_Singularity)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-e-opore
+    url: https://x.com/e_opore
+    label: "Dhanian 🗯️ (@e_opore)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-femke-plantinga
+    url: https://x.com/femke_plantinga
+    label: "Femke Plantinga (@femke_plantinga)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-film-girl
+    url: https://x.com/film_girl
+    label: "Christina Warren (@film_girl)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-google
+    url: https://x.com/Google
+    label: "Google (@Google)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-googledeepmind
+    url: https://x.com/GoogleDeepMind
+    label: "Google DeepMind (@GoogleDeepMind)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-heyeaslo
+    url: https://x.com/heyeaslo
+    label: "Easlo (@heyeaslo)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-ivanhzhao
+    url: https://x.com/ivanhzhao
+    label: "Ivan Zhao (@ivanhzhao)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-jayagup10
+    url: https://x.com/JayaGup10
+    label: "Jaya Gupta (@JayaGup10)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-jspeiser
+    url: https://x.com/jspeiser
+    label: "Joe Speiser ⚡️ (@jspeiser)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-ken-granville
+    url: https://x.com/Ken_Granville
+    label: "Ken Granville (@Ken_Granville)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-klarnaseb
+    url: https://x.com/klarnaseb
+    label: "Sebastian Siemiatkowski (@klarnaseb)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-koylanai
+    url: https://x.com/koylanai
+    label: "Muratcan Koylan (@koylanai)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-marclou
+    url: https://x.com/marclou
+    label: "Marc Lou (@marclou)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-milliemarconnni
+    url: https://x.com/MillieMarconnni
+    label: "Millie Marconi (@MillieMarconnni)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-naval
+    url: https://x.com/naval
+    label: "Naval (@naval)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-officiallogank
+    url: https://x.com/OfficialLoganK
+    label: "Logan Kilpatrick (@OfficialLoganK)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-omooretweets
+    url: https://x.com/omooretweets
+    label: "Olivia Moore (@omooretweets)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-openai
+    url: https://x.com/OpenAI
+    label: "OpenAI (@OpenAI)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-realgenekim
+    url: https://x.com/RealGeneKim
+    label: "Gene Kim (@RealGeneKim)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-rryssf
+    url: https://x.com/rryssf
+    label: "@rryssf"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-saviomartin7
+    url: https://x.com/saviomartin7
+    label: "Savio (@saviomartin7)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-schickling
+    url: https://x.com/schickling
+    label: "Johannes Schickling (@schickling)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-shannholmberg
+    url: https://x.com/shannholmberg
+    label: "Shann³ (@shannholmberg)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-stanfordhai
+    url: https://x.com/StanfordHAI
+    label: "Stanford HAI (@StanfordHAI)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-steipete
+    url: https://x.com/steipete
+    label: "Peter Steinberger 🦞 (@steipete)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-sterlingcrispin
+    url: https://x.com/sterlingcrispin
+    label: "Sterling Crispin 🕊️ (@sterlingcrispin)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-thedankoe
+    url: https://x.com/thedankoe
+    label: "DAN KOE (@thedankoe)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-yuchenj-uw
+    url: https://x.com/Yuchenj_UW
+    label: "Yuchen Jin (@Yuchenj_UW)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  - id: src-x-zackbshapiro
+    url: https://x.com/zackbshapiro
+    label: "Zack Shapiro (@zackbshapiro)"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import]
+    notes: "X follow graph import. 1 prior interaction in archive."
+
+  # --- Unresolved-handle IDs from same archive. Apify accepts the i/user/<id>
+  # URL form via startUrls, so handles are not required at extract time.
+
+  - id: src-x-id-2577596593
+    url: https://x.com/i/user/2577596593
+    label: "X user ID 2577596593"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-776585502606721024
+    url: https://x.com/i/user/776585502606721024
+    label: "X user ID 776585502606721024"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2815077014
+    url: https://x.com/i/user/2815077014
+    label: "X user ID 2815077014"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1482581556
+    url: https://x.com/i/user/1482581556
+    label: "X user ID 1482581556"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-175624200
+    url: https://x.com/i/user/175624200
+    label: "X user ID 175624200"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-130745589
+    url: https://x.com/i/user/130745589
+    label: "X user ID 130745589"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1796642877172551682
+    url: https://x.com/i/user/1796642877172551682
+    label: "X user ID 1796642877172551682"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1455964430760431622
+    url: https://x.com/i/user/1455964430760431622
+    label: "X user ID 1455964430760431622"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4939401
+    url: https://x.com/i/user/4939401
+    label: "X user ID 4939401"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-427089628
+    url: https://x.com/i/user/427089628
+    label: "X user ID 427089628"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1163786515144724485
+    url: https://x.com/i/user/1163786515144724485
+    label: "X user ID 1163786515144724485"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-64844802
+    url: https://x.com/i/user/64844802
+    label: "X user ID 64844802"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-44936471
+    url: https://x.com/i/user/44936471
+    label: "X user ID 44936471"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16141659
+    url: https://x.com/i/user/16141659
+    label: "X user ID 16141659"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2847701842
+    url: https://x.com/i/user/2847701842
+    label: "X user ID 2847701842"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-860565621452316672
+    url: https://x.com/i/user/860565621452316672
+    label: "X user ID 860565621452316672"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1360153294937669635
+    url: https://x.com/i/user/1360153294937669635
+    label: "X user ID 1360153294937669635"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-186420551
+    url: https://x.com/i/user/186420551
+    label: "X user ID 186420551"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-880909453
+    url: https://x.com/i/user/880909453
+    label: "X user ID 880909453"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-242088970
+    url: https://x.com/i/user/242088970
+    label: "X user ID 242088970"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1934228078
+    url: https://x.com/i/user/1934228078
+    label: "X user ID 1934228078"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-308800426
+    url: https://x.com/i/user/308800426
+    label: "X user ID 308800426"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-53175441
+    url: https://x.com/i/user/53175441
+    label: "X user ID 53175441"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1429641923627651072
+    url: https://x.com/i/user/1429641923627651072
+    label: "X user ID 1429641923627651072"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16292441
+    url: https://x.com/i/user/16292441
+    label: "X user ID 16292441"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-569672224
+    url: https://x.com/i/user/569672224
+    label: "X user ID 569672224"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-341017553
+    url: https://x.com/i/user/341017553
+    label: "X user ID 341017553"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3222018178
+    url: https://x.com/i/user/3222018178
+    label: "X user ID 3222018178"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1457481898133843969
+    url: https://x.com/i/user/1457481898133843969
+    label: "X user ID 1457481898133843969"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1569725485323796486
+    url: https://x.com/i/user/1569725485323796486
+    label: "X user ID 1569725485323796486"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1553003264051798019
+    url: https://x.com/i/user/1553003264051798019
+    label: "X user ID 1553003264051798019"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-995588168127864832
+    url: https://x.com/i/user/995588168127864832
+    label: "X user ID 995588168127864832"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-36730901
+    url: https://x.com/i/user/36730901
+    label: "X user ID 36730901"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1442487524669018121
+    url: https://x.com/i/user/1442487524669018121
+    label: "X user ID 1442487524669018121"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-976897777589456897
+    url: https://x.com/i/user/976897777589456897
+    label: "X user ID 976897777589456897"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-331827860
+    url: https://x.com/i/user/331827860
+    label: "X user ID 331827860"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-38193965
+    url: https://x.com/i/user/38193965
+    label: "X user ID 38193965"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-825766640
+    url: https://x.com/i/user/825766640
+    label: "X user ID 825766640"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-703601972
+    url: https://x.com/i/user/703601972
+    label: "X user ID 703601972"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1863959670169501696
+    url: https://x.com/i/user/1863959670169501696
+    label: "X user ID 1863959670169501696"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1603226215610912768
+    url: https://x.com/i/user/1603226215610912768
+    label: "X user ID 1603226215610912768"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-271558271
+    url: https://x.com/i/user/271558271
+    label: "X user ID 271558271"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-192784466
+    url: https://x.com/i/user/192784466
+    label: "X user ID 192784466"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-247785677
+    url: https://x.com/i/user/247785677
+    label: "X user ID 247785677"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-19418583
+    url: https://x.com/i/user/19418583
+    label: "X user ID 19418583"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1239701132252979200
+    url: https://x.com/i/user/1239701132252979200
+    label: "X user ID 1239701132252979200"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-193468339
+    url: https://x.com/i/user/193468339
+    label: "X user ID 193468339"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2226061
+    url: https://x.com/i/user/2226061
+    label: "X user ID 2226061"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-423094645
+    url: https://x.com/i/user/423094645
+    label: "X user ID 423094645"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16008441
+    url: https://x.com/i/user/16008441
+    label: "X user ID 16008441"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-6535212
+    url: https://x.com/i/user/6535212
+    label: "X user ID 6535212"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-339261041
+    url: https://x.com/i/user/339261041
+    label: "X user ID 339261041"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-70138992
+    url: https://x.com/i/user/70138992
+    label: "X user ID 70138992"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1433494466988593153
+    url: https://x.com/i/user/1433494466988593153
+    label: "X user ID 1433494466988593153"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1255627028683984896
+    url: https://x.com/i/user/1255627028683984896
+    label: "X user ID 1255627028683984896"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1607177925492723713
+    url: https://x.com/i/user/1607177925492723713
+    label: "X user ID 1607177925492723713"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1265012192035864578
+    url: https://x.com/i/user/1265012192035864578
+    label: "X user ID 1265012192035864578"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1534498513198977024
+    url: https://x.com/i/user/1534498513198977024
+    label: "X user ID 1534498513198977024"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1610370580967981060
+    url: https://x.com/i/user/1610370580967981060
+    label: "X user ID 1610370580967981060"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1122211825452556288
+    url: https://x.com/i/user/1122211825452556288
+    label: "X user ID 1122211825452556288"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1579498203778539520
+    url: https://x.com/i/user/1579498203778539520
+    label: "X user ID 1579498203778539520"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1372203198094716932
+    url: https://x.com/i/user/1372203198094716932
+    label: "X user ID 1372203198094716932"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1226636978256564226
+    url: https://x.com/i/user/1226636978256564226
+    label: "X user ID 1226636978256564226"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-5520332
+    url: https://x.com/i/user/5520332
+    label: "X user ID 5520332"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14417215
+    url: https://x.com/i/user/14417215
+    label: "X user ID 14417215"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-15698507
+    url: https://x.com/i/user/15698507
+    label: "X user ID 15698507"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-6145622
+    url: https://x.com/i/user/6145622
+    label: "X user ID 6145622"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-15227849
+    url: https://x.com/i/user/15227849
+    label: "X user ID 15227849"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-652193
+    url: https://x.com/i/user/652193
+    label: "X user ID 652193"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-9544202
+    url: https://x.com/i/user/9544202
+    label: "X user ID 9544202"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2970511
+    url: https://x.com/i/user/2970511
+    label: "X user ID 2970511"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-11969
+    url: https://x.com/i/user/11969
+    label: "X user ID 11969"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1979921
+    url: https://x.com/i/user/1979921
+    label: "X user ID 1979921"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3475
+    url: https://x.com/i/user/3475
+    label: "X user ID 3475"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1742923424056713217
+    url: https://x.com/i/user/1742923424056713217
+    label: "X user ID 1742923424056713217"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-512156315
+    url: https://x.com/i/user/512156315
+    label: "X user ID 512156315"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1842517662829531137
+    url: https://x.com/i/user/1842517662829531137
+    label: "X user ID 1842517662829531137"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1352799983276347393
+    url: https://x.com/i/user/1352799983276347393
+    label: "X user ID 1352799983276347393"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1795781228399869952
+    url: https://x.com/i/user/1795781228399869952
+    label: "X user ID 1795781228399869952"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1131943720373428224
+    url: https://x.com/i/user/1131943720373428224
+    label: "X user ID 1131943720373428224"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-977073370108919808
+    url: https://x.com/i/user/977073370108919808
+    label: "X user ID 977073370108919808"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1750770089308372992
+    url: https://x.com/i/user/1750770089308372992
+    label: "X user ID 1750770089308372992"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2217132804
+    url: https://x.com/i/user/2217132804
+    label: "X user ID 2217132804"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2029601211704545280
+    url: https://x.com/i/user/2029601211704545280
+    label: "X user ID 2029601211704545280"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-221871801
+    url: https://x.com/i/user/221871801
+    label: "X user ID 221871801"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1943306828697550848
+    url: https://x.com/i/user/1943306828697550848
+    label: "X user ID 1943306828697550848"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1189736451644243974
+    url: https://x.com/i/user/1189736451644243974
+    label: "X user ID 1189736451644243974"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1158765074
+    url: https://x.com/i/user/1158765074
+    label: "X user ID 1158765074"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16930883
+    url: https://x.com/i/user/16930883
+    label: "X user ID 16930883"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-158610400
+    url: https://x.com/i/user/158610400
+    label: "X user ID 158610400"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1273759306039558145
+    url: https://x.com/i/user/1273759306039558145
+    label: "X user ID 1273759306039558145"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-822518487675305984
+    url: https://x.com/i/user/822518487675305984
+    label: "X user ID 822518487675305984"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-626691391
+    url: https://x.com/i/user/626691391
+    label: "X user ID 626691391"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14879002
+    url: https://x.com/i/user/14879002
+    label: "X user ID 14879002"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1273505391553449985
+    url: https://x.com/i/user/1273505391553449985
+    label: "X user ID 1273505391553449985"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-893823882
+    url: https://x.com/i/user/893823882
+    label: "X user ID 893823882"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1067927682023915521
+    url: https://x.com/i/user/1067927682023915521
+    label: "X user ID 1067927682023915521"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-369735258
+    url: https://x.com/i/user/369735258
+    label: "X user ID 369735258"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3299021150
+    url: https://x.com/i/user/3299021150
+    label: "X user ID 3299021150"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1912865614114209792
+    url: https://x.com/i/user/1912865614114209792
+    label: "X user ID 1912865614114209792"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1409805288488652801
+    url: https://x.com/i/user/1409805288488652801
+    label: "X user ID 1409805288488652801"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1273320084207886336
+    url: https://x.com/i/user/1273320084207886336
+    label: "X user ID 1273320084207886336"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-316501404
+    url: https://x.com/i/user/316501404
+    label: "X user ID 316501404"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1171127783138816000
+    url: https://x.com/i/user/1171127783138816000
+    label: "X user ID 1171127783138816000"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-19755503
+    url: https://x.com/i/user/19755503
+    label: "X user ID 19755503"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1297778649450463233
+    url: https://x.com/i/user/1297778649450463233
+    label: "X user ID 1297778649450463233"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-175282603
+    url: https://x.com/i/user/175282603
+    label: "X user ID 175282603"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1435630183
+    url: https://x.com/i/user/1435630183
+    label: "X user ID 1435630183"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-849319385080659968
+    url: https://x.com/i/user/849319385080659968
+    label: "X user ID 849319385080659968"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1185048519771471872
+    url: https://x.com/i/user/1185048519771471872
+    label: "X user ID 1185048519771471872"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1194889317388374016
+    url: https://x.com/i/user/1194889317388374016
+    label: "X user ID 1194889317388374016"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1397919452331614210
+    url: https://x.com/i/user/1397919452331614210
+    label: "X user ID 1397919452331614210"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14195827
+    url: https://x.com/i/user/14195827
+    label: "X user ID 14195827"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1969549794604695556
+    url: https://x.com/i/user/1969549794604695556
+    label: "X user ID 1969549794604695556"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1336528268766441474
+    url: https://x.com/i/user/1336528268766441474
+    label: "X user ID 1336528268766441474"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1790083138959400961
+    url: https://x.com/i/user/1790083138959400961
+    label: "X user ID 1790083138959400961"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-5797422
+    url: https://x.com/i/user/5797422
+    label: "X user ID 5797422"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1470503969789251589
+    url: https://x.com/i/user/1470503969789251589
+    label: "X user ID 1470503969789251589"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1540177468723789825
+    url: https://x.com/i/user/1540177468723789825
+    label: "X user ID 1540177468723789825"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-890428968
+    url: https://x.com/i/user/890428968
+    label: "X user ID 890428968"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2329378182
+    url: https://x.com/i/user/2329378182
+    label: "X user ID 2329378182"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-249795230
+    url: https://x.com/i/user/249795230
+    label: "X user ID 249795230"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1360265495363145730
+    url: https://x.com/i/user/1360265495363145730
+    label: "X user ID 1360265495363145730"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-831266147643359233
+    url: https://x.com/i/user/831266147643359233
+    label: "X user ID 831266147643359233"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-122240174
+    url: https://x.com/i/user/122240174
+    label: "X user ID 122240174"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2924766707
+    url: https://x.com/i/user/2924766707
+    label: "X user ID 2924766707"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-261859794
+    url: https://x.com/i/user/261859794
+    label: "X user ID 261859794"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1577241403
+    url: https://x.com/i/user/1577241403
+    label: "X user ID 1577241403"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1699591741043527680
+    url: https://x.com/i/user/1699591741043527680
+    label: "X user ID 1699591741043527680"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1594925779778871296
+    url: https://x.com/i/user/1594925779778871296
+    label: "X user ID 1594925779778871296"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1601693298707628035
+    url: https://x.com/i/user/1601693298707628035
+    label: "X user ID 1601693298707628035"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-43775786
+    url: https://x.com/i/user/43775786
+    label: "X user ID 43775786"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-880412538625810432
+    url: https://x.com/i/user/880412538625810432
+    label: "X user ID 880412538625810432"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3291691
+    url: https://x.com/i/user/3291691
+    label: "X user ID 3291691"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-581341543
+    url: https://x.com/i/user/581341543
+    label: "X user ID 581341543"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-786375418685165568
+    url: https://x.com/i/user/786375418685165568
+    label: "X user ID 786375418685165568"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-47582717
+    url: https://x.com/i/user/47582717
+    label: "X user ID 47582717"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1655925560596373506
+    url: https://x.com/i/user/1655925560596373506
+    label: "X user ID 1655925560596373506"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-940940098190921730
+    url: https://x.com/i/user/940940098190921730
+    label: "X user ID 940940098190921730"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2457094022
+    url: https://x.com/i/user/2457094022
+    label: "X user ID 2457094022"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-338526004
+    url: https://x.com/i/user/338526004
+    label: "X user ID 338526004"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-29643133
+    url: https://x.com/i/user/29643133
+    label: "X user ID 29643133"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-68538286
+    url: https://x.com/i/user/68538286
+    label: "X user ID 68538286"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-102253517
+    url: https://x.com/i/user/102253517
+    label: "X user ID 102253517"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1418806686500884481
+    url: https://x.com/i/user/1418806686500884481
+    label: "X user ID 1418806686500884481"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-587016589
+    url: https://x.com/i/user/587016589
+    label: "X user ID 587016589"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-857827716
+    url: https://x.com/i/user/857827716
+    label: "X user ID 857827716"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1199872193934458881
+    url: https://x.com/i/user/1199872193934458881
+    label: "X user ID 1199872193934458881"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-908728623988953089
+    url: https://x.com/i/user/908728623988953089
+    label: "X user ID 908728623988953089"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1075888541387931650
+    url: https://x.com/i/user/1075888541387931650
+    label: "X user ID 1075888541387931650"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1314686042
+    url: https://x.com/i/user/1314686042
+    label: "X user ID 1314686042"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1604278358296055808
+    url: https://x.com/i/user/1604278358296055808
+    label: "X user ID 1604278358296055808"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2786431437
+    url: https://x.com/i/user/2786431437
+    label: "X user ID 2786431437"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-404500321
+    url: https://x.com/i/user/404500321
+    label: "X user ID 404500321"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2008186889724178433
+    url: https://x.com/i/user/2008186889724178433
+    label: "X user ID 2008186889724178433"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1937290626829275136
+    url: https://x.com/i/user/1937290626829275136
+    label: "X user ID 1937290626829275136"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1268982340090355712
+    url: https://x.com/i/user/1268982340090355712
+    label: "X user ID 1268982340090355712"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1922488252696764416
+    url: https://x.com/i/user/1922488252696764416
+    label: "X user ID 1922488252696764416"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-17189394
+    url: https://x.com/i/user/17189394
+    label: "X user ID 17189394"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2002063599305719809
+    url: https://x.com/i/user/2002063599305719809
+    label: "X user ID 2002063599305719809"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1891523745929732096
+    url: https://x.com/i/user/1891523745929732096
+    label: "X user ID 1891523745929732096"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-96999384
+    url: https://x.com/i/user/96999384
+    label: "X user ID 96999384"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1720046887
+    url: https://x.com/i/user/1720046887
+    label: "X user ID 1720046887"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-775449094739197953
+    url: https://x.com/i/user/775449094739197953
+    label: "X user ID 775449094739197953"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1084212657761148928
+    url: https://x.com/i/user/1084212657761148928
+    label: "X user ID 1084212657761148928"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3918111614
+    url: https://x.com/i/user/3918111614
+    label: "X user ID 3918111614"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1002190113831452672
+    url: https://x.com/i/user/1002190113831452672
+    label: "X user ID 1002190113831452672"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-778764142412984320
+    url: https://x.com/i/user/778764142412984320
+    label: "X user ID 778764142412984320"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1270429378246213632
+    url: https://x.com/i/user/1270429378246213632
+    label: "X user ID 1270429378246213632"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2570689932
+    url: https://x.com/i/user/2570689932
+    label: "X user ID 2570689932"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1270744574
+    url: https://x.com/i/user/1270744574
+    label: "X user ID 1270744574"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14784349
+    url: https://x.com/i/user/14784349
+    label: "X user ID 14784349"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1361859982921138176
+    url: https://x.com/i/user/1361859982921138176
+    label: "X user ID 1361859982921138176"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-705467506794717184
+    url: https://x.com/i/user/705467506794717184
+    label: "X user ID 705467506794717184"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1464452744400486400
+    url: https://x.com/i/user/1464452744400486400
+    label: "X user ID 1464452744400486400"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1445838147900764162
+    url: https://x.com/i/user/1445838147900764162
+    label: "X user ID 1445838147900764162"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-47511005
+    url: https://x.com/i/user/47511005
+    label: "X user ID 47511005"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-58572602
+    url: https://x.com/i/user/58572602
+    label: "X user ID 58572602"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4828470319
+    url: https://x.com/i/user/4828470319
+    label: "X user ID 4828470319"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1378776755738140675
+    url: https://x.com/i/user/1378776755738140675
+    label: "X user ID 1378776755738140675"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-49663325
+    url: https://x.com/i/user/49663325
+    label: "X user ID 49663325"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-31190770
+    url: https://x.com/i/user/31190770
+    label: "X user ID 31190770"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-19268321
+    url: https://x.com/i/user/19268321
+    label: "X user ID 19268321"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-15540222
+    url: https://x.com/i/user/15540222
+    label: "X user ID 15540222"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-815246
+    url: https://x.com/i/user/815246
+    label: "X user ID 815246"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2489440172
+    url: https://x.com/i/user/2489440172
+    label: "X user ID 2489440172"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-992126114
+    url: https://x.com/i/user/992126114
+    label: "X user ID 992126114"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16705419
+    url: https://x.com/i/user/16705419
+    label: "X user ID 16705419"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-813333008
+    url: https://x.com/i/user/813333008
+    label: "X user ID 813333008"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-167193309
+    url: https://x.com/i/user/167193309
+    label: "X user ID 167193309"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-50136899
+    url: https://x.com/i/user/50136899
+    label: "X user ID 50136899"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-389681470
+    url: https://x.com/i/user/389681470
+    label: "X user ID 389681470"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-159337660
+    url: https://x.com/i/user/159337660
+    label: "X user ID 159337660"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3033730635
+    url: https://x.com/i/user/3033730635
+    label: "X user ID 3033730635"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-27213047
+    url: https://x.com/i/user/27213047
+    label: "X user ID 27213047"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1327748028229357571
+    url: https://x.com/i/user/1327748028229357571
+    label: "X user ID 1327748028229357571"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1317327383628705793
+    url: https://x.com/i/user/1317327383628705793
+    label: "X user ID 1317327383628705793"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2164623379
+    url: https://x.com/i/user/2164623379
+    label: "X user ID 2164623379"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1315709346689568770
+    url: https://x.com/i/user/1315709346689568770
+    label: "X user ID 1315709346689568770"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14852204
+    url: https://x.com/i/user/14852204
+    label: "X user ID 14852204"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-998671087213871104
+    url: https://x.com/i/user/998671087213871104
+    label: "X user ID 998671087213871104"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1364725713329356807
+    url: https://x.com/i/user/1364725713329356807
+    label: "X user ID 1364725713329356807"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-312681953
+    url: https://x.com/i/user/312681953
+    label: "X user ID 312681953"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1258149995645210629
+    url: https://x.com/i/user/1258149995645210629
+    label: "X user ID 1258149995645210629"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1476511909641924608
+    url: https://x.com/i/user/1476511909641924608
+    label: "X user ID 1476511909641924608"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-954336280380346368
+    url: https://x.com/i/user/954336280380346368
+    label: "X user ID 954336280380346368"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1482896070577467392
+    url: https://x.com/i/user/1482896070577467392
+    label: "X user ID 1482896070577467392"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1084494018266976256
+    url: https://x.com/i/user/1084494018266976256
+    label: "X user ID 1084494018266976256"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-17406365
+    url: https://x.com/i/user/17406365
+    label: "X user ID 17406365"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1242989329472864256
+    url: https://x.com/i/user/1242989329472864256
+    label: "X user ID 1242989329472864256"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-815555071517872128
+    url: https://x.com/i/user/815555071517872128
+    label: "X user ID 815555071517872128"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-6398252
+    url: https://x.com/i/user/6398252
+    label: "X user ID 6398252"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-12496682
+    url: https://x.com/i/user/12496682
+    label: "X user ID 12496682"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1675940718345617413
+    url: https://x.com/i/user/1675940718345617413
+    label: "X user ID 1675940718345617413"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1903578997981646848
+    url: https://x.com/i/user/1903578997981646848
+    label: "X user ID 1903578997981646848"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3253629143
+    url: https://x.com/i/user/3253629143
+    label: "X user ID 3253629143"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1718038369689542656
+    url: https://x.com/i/user/1718038369689542656
+    label: "X user ID 1718038369689542656"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-936345311689236481
+    url: https://x.com/i/user/936345311689236481
+    label: "X user ID 936345311689236481"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1726760827452350464
+    url: https://x.com/i/user/1726760827452350464
+    label: "X user ID 1726760827452350464"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-895332160130891776
+    url: https://x.com/i/user/895332160130891776
+    label: "X user ID 895332160130891776"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-988875229081432064
+    url: https://x.com/i/user/988875229081432064
+    label: "X user ID 988875229081432064"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-209635114
+    url: https://x.com/i/user/209635114
+    label: "X user ID 209635114"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1426972475766751235
+    url: https://x.com/i/user/1426972475766751235
+    label: "X user ID 1426972475766751235"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1813543490237915137
+    url: https://x.com/i/user/1813543490237915137
+    label: "X user ID 1813543490237915137"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-137086701
+    url: https://x.com/i/user/137086701
+    label: "X user ID 137086701"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-173057927
+    url: https://x.com/i/user/173057927
+    label: "X user ID 173057927"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1968341100730400768
+    url: https://x.com/i/user/1968341100730400768
+    label: "X user ID 1968341100730400768"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-773373198230495232
+    url: https://x.com/i/user/773373198230495232
+    label: "X user ID 773373198230495232"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-950034989395177472
+    url: https://x.com/i/user/950034989395177472
+    label: "X user ID 950034989395177472"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1289828739094732802
+    url: https://x.com/i/user/1289828739094732802
+    label: "X user ID 1289828739094732802"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-936296688397856768
+    url: https://x.com/i/user/936296688397856768
+    label: "X user ID 936296688397856768"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-97487492
+    url: https://x.com/i/user/97487492
+    label: "X user ID 97487492"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1821158702855950336
+    url: https://x.com/i/user/1821158702855950336
+    label: "X user ID 1821158702855950336"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1361124510
+    url: https://x.com/i/user/1361124510
+    label: "X user ID 1361124510"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-104281062
+    url: https://x.com/i/user/104281062
+    label: "X user ID 104281062"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3127370223
+    url: https://x.com/i/user/3127370223
+    label: "X user ID 3127370223"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1511333035
+    url: https://x.com/i/user/1511333035
+    label: "X user ID 1511333035"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-106200494
+    url: https://x.com/i/user/106200494
+    label: "X user ID 106200494"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-39125788
+    url: https://x.com/i/user/39125788
+    label: "X user ID 39125788"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-234857514
+    url: https://x.com/i/user/234857514
+    label: "X user ID 234857514"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-66590132
+    url: https://x.com/i/user/66590132
+    label: "X user ID 66590132"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2155859580
+    url: https://x.com/i/user/2155859580
+    label: "X user ID 2155859580"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-369307681
+    url: https://x.com/i/user/369307681
+    label: "X user ID 369307681"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-113240899
+    url: https://x.com/i/user/113240899
+    label: "X user ID 113240899"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-790379282
+    url: https://x.com/i/user/790379282
+    label: "X user ID 790379282"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1277585390254186496
+    url: https://x.com/i/user/1277585390254186496
+    label: "X user ID 1277585390254186496"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1449036464495472647
+    url: https://x.com/i/user/1449036464495472647
+    label: "X user ID 1449036464495472647"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1448746765826486289
+    url: https://x.com/i/user/1448746765826486289
+    label: "X user ID 1448746765826486289"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-470129898
+    url: https://x.com/i/user/470129898
+    label: "X user ID 470129898"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-48139266
+    url: https://x.com/i/user/48139266
+    label: "X user ID 48139266"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1095437639380017157
+    url: https://x.com/i/user/1095437639380017157
+    label: "X user ID 1095437639380017157"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-343990983
+    url: https://x.com/i/user/343990983
+    label: "X user ID 343990983"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1536149137518997504
+    url: https://x.com/i/user/1536149137518997504
+    label: "X user ID 1536149137518997504"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1160721354649460736
+    url: https://x.com/i/user/1160721354649460736
+    label: "X user ID 1160721354649460736"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-45851500
+    url: https://x.com/i/user/45851500
+    label: "X user ID 45851500"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4746455775
+    url: https://x.com/i/user/4746455775
+    label: "X user ID 4746455775"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-19694536
+    url: https://x.com/i/user/19694536
+    label: "X user ID 19694536"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-251852045
+    url: https://x.com/i/user/251852045
+    label: "X user ID 251852045"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1455424170364481545
+    url: https://x.com/i/user/1455424170364481545
+    label: "X user ID 1455424170364481545"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-348429830
+    url: https://x.com/i/user/348429830
+    label: "X user ID 348429830"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3181020308
+    url: https://x.com/i/user/3181020308
+    label: "X user ID 3181020308"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-934414761500073985
+    url: https://x.com/i/user/934414761500073985
+    label: "X user ID 934414761500073985"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14275130
+    url: https://x.com/i/user/14275130
+    label: "X user ID 14275130"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-138353711
+    url: https://x.com/i/user/138353711
+    label: "X user ID 138353711"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1448654550382960645
+    url: https://x.com/i/user/1448654550382960645
+    label: "X user ID 1448654550382960645"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-22708585
+    url: https://x.com/i/user/22708585
+    label: "X user ID 22708585"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-304108071
+    url: https://x.com/i/user/304108071
+    label: "X user ID 304108071"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-711232574245498880
+    url: https://x.com/i/user/711232574245498880
+    label: "X user ID 711232574245498880"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1536555350
+    url: https://x.com/i/user/1536555350
+    label: "X user ID 1536555350"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-870038005
+    url: https://x.com/i/user/870038005
+    label: "X user ID 870038005"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-703528675271176192
+    url: https://x.com/i/user/703528675271176192
+    label: "X user ID 703528675271176192"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1328271312628936705
+    url: https://x.com/i/user/1328271312628936705
+    label: "X user ID 1328271312628936705"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4407451109
+    url: https://x.com/i/user/4407451109
+    label: "X user ID 4407451109"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-17730766
+    url: https://x.com/i/user/17730766
+    label: "X user ID 17730766"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1244757954605309952
+    url: https://x.com/i/user/1244757954605309952
+    label: "X user ID 1244757954605309952"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1270544119451049984
+    url: https://x.com/i/user/1270544119451049984
+    label: "X user ID 1270544119451049984"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-19210648
+    url: https://x.com/i/user/19210648
+    label: "X user ID 19210648"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1221079432812777472
+    url: https://x.com/i/user/1221079432812777472
+    label: "X user ID 1221079432812777472"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1531917656093249537
+    url: https://x.com/i/user/1531917656093249537
+    label: "X user ID 1531917656093249537"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-113963
+    url: https://x.com/i/user/113963
+    label: "X user ID 113963"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1408789941040058369
+    url: https://x.com/i/user/1408789941040058369
+    label: "X user ID 1408789941040058369"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1202267633049100291
+    url: https://x.com/i/user/1202267633049100291
+    label: "X user ID 1202267633049100291"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1007413134
+    url: https://x.com/i/user/1007413134
+    label: "X user ID 1007413134"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-18752896
+    url: https://x.com/i/user/18752896
+    label: "X user ID 18752896"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-38190583
+    url: https://x.com/i/user/38190583
+    label: "X user ID 38190583"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-836904555728289793
+    url: https://x.com/i/user/836904555728289793
+    label: "X user ID 836904555728289793"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-59711807
+    url: https://x.com/i/user/59711807
+    label: "X user ID 59711807"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-11704332
+    url: https://x.com/i/user/11704332
+    label: "X user ID 11704332"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-41188903
+    url: https://x.com/i/user/41188903
+    label: "X user ID 41188903"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-909943277280952321
+    url: https://x.com/i/user/909943277280952321
+    label: "X user ID 909943277280952321"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1419135965239472128
+    url: https://x.com/i/user/1419135965239472128
+    label: "X user ID 1419135965239472128"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1154155010172870659
+    url: https://x.com/i/user/1154155010172870659
+    label: "X user ID 1154155010172870659"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-118639757
+    url: https://x.com/i/user/118639757
+    label: "X user ID 118639757"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1098881129057112064
+    url: https://x.com/i/user/1098881129057112064
+    label: "X user ID 1098881129057112064"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1443733938267049985
+    url: https://x.com/i/user/1443733938267049985
+    label: "X user ID 1443733938267049985"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-105657151
+    url: https://x.com/i/user/105657151
+    label: "X user ID 105657151"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-20323699
+    url: https://x.com/i/user/20323699
+    label: "X user ID 20323699"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1431768395993780229
+    url: https://x.com/i/user/1431768395993780229
+    label: "X user ID 1431768395993780229"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1434811797807247360
+    url: https://x.com/i/user/1434811797807247360
+    label: "X user ID 1434811797807247360"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1424584348796428289
+    url: https://x.com/i/user/1424584348796428289
+    label: "X user ID 1424584348796428289"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1836078160653246464
+    url: https://x.com/i/user/1836078160653246464
+    label: "X user ID 1836078160653246464"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1922554203748335616
+    url: https://x.com/i/user/1922554203748335616
+    label: "X user ID 1922554203748335616"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1977766868405411840
+    url: https://x.com/i/user/1977766868405411840
+    label: "X user ID 1977766868405411840"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1341423837838249984
+    url: https://x.com/i/user/1341423837838249984
+    label: "X user ID 1341423837838249984"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-360254234
+    url: https://x.com/i/user/360254234
+    label: "X user ID 360254234"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1248810589243072513
+    url: https://x.com/i/user/1248810589243072513
+    label: "X user ID 1248810589243072513"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1147778876338085888
+    url: https://x.com/i/user/1147778876338085888
+    label: "X user ID 1147778876338085888"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1524901467689078789
+    url: https://x.com/i/user/1524901467689078789
+    label: "X user ID 1524901467689078789"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1362252195668746240
+    url: https://x.com/i/user/1362252195668746240
+    label: "X user ID 1362252195668746240"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1716108014
+    url: https://x.com/i/user/1716108014
+    label: "X user ID 1716108014"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1292202010197086208
+    url: https://x.com/i/user/1292202010197086208
+    label: "X user ID 1292202010197086208"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-617073276
+    url: https://x.com/i/user/617073276
+    label: "X user ID 617073276"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2281405752
+    url: https://x.com/i/user/2281405752
+    label: "X user ID 2281405752"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1893768587967348736
+    url: https://x.com/i/user/1893768587967348736
+    label: "X user ID 1893768587967348736"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-821984322
+    url: https://x.com/i/user/821984322
+    label: "X user ID 821984322"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1030541912116211712
+    url: https://x.com/i/user/1030541912116211712
+    label: "X user ID 1030541912116211712"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1528558014
+    url: https://x.com/i/user/1528558014
+    label: "X user ID 1528558014"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-995543502
+    url: https://x.com/i/user/995543502
+    label: "X user ID 995543502"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-272696832
+    url: https://x.com/i/user/272696832
+    label: "X user ID 272696832"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-97530284
+    url: https://x.com/i/user/97530284
+    label: "X user ID 97530284"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1279851525750300672
+    url: https://x.com/i/user/1279851525750300672
+    label: "X user ID 1279851525750300672"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2214652482
+    url: https://x.com/i/user/2214652482
+    label: "X user ID 2214652482"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3420659128
+    url: https://x.com/i/user/3420659128
+    label: "X user ID 3420659128"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-28369153
+    url: https://x.com/i/user/28369153
+    label: "X user ID 28369153"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1398828682828038146
+    url: https://x.com/i/user/1398828682828038146
+    label: "X user ID 1398828682828038146"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2725104191
+    url: https://x.com/i/user/2725104191
+    label: "X user ID 2725104191"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-101805159
+    url: https://x.com/i/user/101805159
+    label: "X user ID 101805159"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2048741
+    url: https://x.com/i/user/2048741
+    label: "X user ID 2048741"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-20244980
+    url: https://x.com/i/user/20244980
+    label: "X user ID 20244980"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-7958322
+    url: https://x.com/i/user/7958322
+    label: "X user ID 7958322"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1021817359
+    url: https://x.com/i/user/1021817359
+    label: "X user ID 1021817359"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14472613
+    url: https://x.com/i/user/14472613
+    label: "X user ID 14472613"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4736729423
+    url: https://x.com/i/user/4736729423
+    label: "X user ID 4736729423"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-774642558853009408
+    url: https://x.com/i/user/774642558853009408
+    label: "X user ID 774642558853009408"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1475495658
+    url: https://x.com/i/user/1475495658
+    label: "X user ID 1475495658"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-17611446
+    url: https://x.com/i/user/17611446
+    label: "X user ID 17611446"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2895499182
+    url: https://x.com/i/user/2895499182
+    label: "X user ID 2895499182"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-68746721
+    url: https://x.com/i/user/68746721
+    label: "X user ID 68746721"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2465283662
+    url: https://x.com/i/user/2465283662
+    label: "X user ID 2465283662"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-48008938
+    url: https://x.com/i/user/48008938
+    label: "X user ID 48008938"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-407800233
+    url: https://x.com/i/user/407800233
+    label: "X user ID 407800233"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1034844617261248512
+    url: https://x.com/i/user/1034844617261248512
+    label: "X user ID 1034844617261248512"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-865622395
+    url: https://x.com/i/user/865622395
+    label: "X user ID 865622395"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16535432
+    url: https://x.com/i/user/16535432
+    label: "X user ID 16535432"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2309105822
+    url: https://x.com/i/user/2309105822
+    label: "X user ID 2309105822"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1128159740599656448
+    url: https://x.com/i/user/1128159740599656448
+    label: "X user ID 1128159740599656448"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2236047510
+    url: https://x.com/i/user/2236047510
+    label: "X user ID 2236047510"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1395499471
+    url: https://x.com/i/user/1395499471
+    label: "X user ID 1395499471"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-70831441
+    url: https://x.com/i/user/70831441
+    label: "X user ID 70831441"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-39547749
+    url: https://x.com/i/user/39547749
+    label: "X user ID 39547749"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-85225861
+    url: https://x.com/i/user/85225861
+    label: "X user ID 85225861"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-977687191202693125
+    url: https://x.com/i/user/977687191202693125
+    label: "X user ID 977687191202693125"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-794433401591693312
+    url: https://x.com/i/user/794433401591693312
+    label: "X user ID 794433401591693312"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1353836358901501952
+    url: https://x.com/i/user/1353836358901501952
+    label: "X user ID 1353836358901501952"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-930488076618555392
+    url: https://x.com/i/user/930488076618555392
+    label: "X user ID 930488076618555392"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1248482976511324164
+    url: https://x.com/i/user/1248482976511324164
+    label: "X user ID 1248482976511324164"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1857836276667334656
+    url: https://x.com/i/user/1857836276667334656
+    label: "X user ID 1857836276667334656"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-615818451
+    url: https://x.com/i/user/615818451
+    label: "X user ID 615818451"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-349347318
+    url: https://x.com/i/user/349347318
+    label: "X user ID 349347318"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-194694215
+    url: https://x.com/i/user/194694215
+    label: "X user ID 194694215"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-14710129
+    url: https://x.com/i/user/14710129
+    label: "X user ID 14710129"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3302
+    url: https://x.com/i/user/3302
+    label: "X user ID 3302"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-520445177
+    url: https://x.com/i/user/520445177
+    label: "X user ID 520445177"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16359535
+    url: https://x.com/i/user/16359535
+    label: "X user ID 16359535"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-390075722
+    url: https://x.com/i/user/390075722
+    label: "X user ID 390075722"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-101354595
+    url: https://x.com/i/user/101354595
+    label: "X user ID 101354595"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-346640777
+    url: https://x.com/i/user/346640777
+    label: "X user ID 346640777"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-818675913109999616
+    url: https://x.com/i/user/818675913109999616
+    label: "X user ID 818675913109999616"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-172200213
+    url: https://x.com/i/user/172200213
+    label: "X user ID 172200213"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-12819682
+    url: https://x.com/i/user/12819682
+    label: "X user ID 12819682"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-113419064
+    url: https://x.com/i/user/113419064
+    label: "X user ID 113419064"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-285428413
+    url: https://x.com/i/user/285428413
+    label: "X user ID 285428413"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-10809412
+    url: https://x.com/i/user/10809412
+    label: "X user ID 10809412"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1367347238691762180
+    url: https://x.com/i/user/1367347238691762180
+    label: "X user ID 1367347238691762180"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-5475662
+    url: https://x.com/i/user/5475662
+    label: "X user ID 5475662"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-30192824
+    url: https://x.com/i/user/30192824
+    label: "X user ID 30192824"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-15577854
+    url: https://x.com/i/user/15577854
+    label: "X user ID 15577854"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-322171897
+    url: https://x.com/i/user/322171897
+    label: "X user ID 322171897"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1124707096312918018
+    url: https://x.com/i/user/1124707096312918018
+    label: "X user ID 1124707096312918018"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-221838349
+    url: https://x.com/i/user/221838349
+    label: "X user ID 221838349"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-636513296
+    url: https://x.com/i/user/636513296
+    label: "X user ID 636513296"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-793023
+    url: https://x.com/i/user/793023
+    label: "X user ID 793023"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-33836629
+    url: https://x.com/i/user/33836629
+    label: "X user ID 33836629"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1460283925
+    url: https://x.com/i/user/1460283925
+    label: "X user ID 1460283925"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-914061
+    url: https://x.com/i/user/914061
+    label: "X user ID 914061"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-183749519
+    url: https://x.com/i/user/183749519
+    label: "X user ID 183749519"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-162124540
+    url: https://x.com/i/user/162124540
+    label: "X user ID 162124540"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-17713899
+    url: https://x.com/i/user/17713899
+    label: "X user ID 17713899"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-121690511
+    url: https://x.com/i/user/121690511
+    label: "X user ID 121690511"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-799810295954804736
+    url: https://x.com/i/user/799810295954804736
+    label: "X user ID 799810295954804736"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-24828810
+    url: https://x.com/i/user/24828810
+    label: "X user ID 24828810"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-264228211
+    url: https://x.com/i/user/264228211
+    label: "X user ID 264228211"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4902221
+    url: https://x.com/i/user/4902221
+    label: "X user ID 4902221"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1153819519959425024
+    url: https://x.com/i/user/1153819519959425024
+    label: "X user ID 1153819519959425024"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-15626406
+    url: https://x.com/i/user/15626406
+    label: "X user ID 15626406"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1492807728
+    url: https://x.com/i/user/1492807728
+    label: "X user ID 1492807728"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-393119422
+    url: https://x.com/i/user/393119422
+    label: "X user ID 393119422"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2897742299
+    url: https://x.com/i/user/2897742299
+    label: "X user ID 2897742299"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1649724750803922945
+    url: https://x.com/i/user/1649724750803922945
+    label: "X user ID 1649724750803922945"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1684368427228487683
+    url: https://x.com/i/user/1684368427228487683
+    label: "X user ID 1684368427228487683"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1649358046093623298
+    url: https://x.com/i/user/1649358046093623298
+    label: "X user ID 1649358046093623298"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-922955517030408192
+    url: https://x.com/i/user/922955517030408192
+    label: "X user ID 922955517030408192"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1617950998080675840
+    url: https://x.com/i/user/1617950998080675840
+    label: "X user ID 1617950998080675840"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-13348
+    url: https://x.com/i/user/13348
+    label: "X user ID 13348"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-330533467
+    url: https://x.com/i/user/330533467
+    label: "X user ID 330533467"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-831767219071754240
+    url: https://x.com/i/user/831767219071754240
+    label: "X user ID 831767219071754240"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-35203319
+    url: https://x.com/i/user/35203319
+    label: "X user ID 35203319"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-4263007693
+    url: https://x.com/i/user/4263007693
+    label: "X user ID 4263007693"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-807095
+    url: https://x.com/i/user/807095
+    label: "X user ID 807095"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-16242081
+    url: https://x.com/i/user/16242081
+    label: "X user ID 16242081"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1323960620149055490
+    url: https://x.com/i/user/1323960620149055490
+    label: "X user ID 1323960620149055490"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1417686048579018753
+    url: https://x.com/i/user/1417686048579018753
+    label: "X user ID 1417686048579018753"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2455740283
+    url: https://x.com/i/user/2455740283
+    label: "X user ID 2455740283"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-50393960
+    url: https://x.com/i/user/50393960
+    label: "X user ID 50393960"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-70203939
+    url: https://x.com/i/user/70203939
+    label: "X user ID 70203939"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-55897818
+    url: https://x.com/i/user/55897818
+    label: "X user ID 55897818"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-2312333412
+    url: https://x.com/i/user/2312333412
+    label: "X user ID 2312333412"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-15506669
+    url: https://x.com/i/user/15506669
+    label: "X user ID 15506669"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1407390920740270080
+    url: https://x.com/i/user/1407390920740270080
+    label: "X user ID 1407390920740270080"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1467796317632147458
+    url: https://x.com/i/user/1467796317632147458
+    label: "X user ID 1467796317632147458"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1202724401528987648
+    url: https://x.com/i/user/1202724401528987648
+    label: "X user ID 1202724401528987648"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1420876468633153537
+    url: https://x.com/i/user/1420876468633153537
+    label: "X user ID 1420876468633153537"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1434729911390855171
+    url: https://x.com/i/user/1434729911390855171
+    label: "X user ID 1434729911390855171"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1442807179657031680
+    url: https://x.com/i/user/1442807179657031680
+    label: "X user ID 1442807179657031680"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-958118843636854784
+    url: https://x.com/i/user/958118843636854784
+    label: "X user ID 958118843636854784"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-34713362
+    url: https://x.com/i/user/34713362
+    label: "X user ID 34713362"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-34743251
+    url: https://x.com/i/user/34743251
+    label: "X user ID 34743251"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-3108351
+    url: https://x.com/i/user/3108351
+    label: "X user ID 3108351"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-1333467482
+    url: https://x.com/i/user/1333467482
+    label: "X user ID 1333467482"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-5988062
+    url: https://x.com/i/user/5988062
+    label: "X user ID 5988062"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-357312062
+    url: https://x.com/i/user/357312062
+    label: "X user ID 357312062"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-12
+    url: https://x.com/i/user/12
+    label: "X user ID 12"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-380749300
+    url: https://x.com/i/user/380749300
+    label: "X user ID 380749300"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."
+
+  - id: src-x-id-275686563
+    url: https://x.com/i/user/275686563
+    label: "X user ID 275686563"
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [x_follow_import, x_id_only]
+    notes: "X follow graph import. Handle not in archive interaction history — resolved server-side by Apify at extract time."

@@ -1,0 +1,49 @@
+{
+  "name": "business-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "bash scripts/start.sh",
+    "dev": "tsx watch execution/index.ts",
+    "build": "rm -rf dist && tsc && cp execution/db/schema.sql dist/db/schema.sql",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "db:setup": "tsx execution/db/setup.ts",
+    "db:reset": "bash -lc 'set -a; [ -f .env.local ] && source .env.local; set +a; docker compose down -v && docker compose up -d && sleep 3 && tsx execution/db/setup.ts'",
+    "db:stop": "docker compose down",
+    "db:logs": "docker logs -f business-workspace-db",
+    "db:psql": "docker exec -it business-workspace-db psql -U workspace -d workspace",
+    "db:regen-certs": "rm -f certs/server.key certs/server.crt && pnpm start",
+    "extract:reddit": "tsx execution/sync/extract-reddit.ts",
+    "extract:reddit:daily": "tsx execution/sync/extract-reddit.ts --daily",
+    "extract:reddit:monthly": "tsx execution/sync/extract-reddit.ts --monthly",
+    "sync:sources": "tsx execution/sync/sync-sources.ts",
+    "push:sources": "tsx execution/sync/sync-sources.ts push",
+    "pull:sources": "tsx execution/sync/sync-sources.ts pull",
+    "research:queue": "tsx execution/research/pulse-bridge.ts",
+    "research:queue:dry": "tsx execution/research/pulse-bridge.ts --dry-run",
+    "research:lint": "hyperresearch lint -j"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "^8.20.0",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vite": "^7.3.2",
+    "vitest": "^3"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.91.0",
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
+    "exa-js": "^2.12.1",
+    "pg": "^8.20.0",
+    "yaml": "^2.8.3",
+    "zod": "^4.3.6"
+  }
+}

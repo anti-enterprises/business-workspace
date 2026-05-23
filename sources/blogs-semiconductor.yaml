@@ -1,0 +1,389 @@
+schema_version: '1'
+strategic_role: industry_signal
+sources:
+- id: src-rss-nvidia-ai-blog
+  url: https://blogs.nvidia.com/blog/category/deep-learning/
+  label: NVIDIA AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_0
+  feed_url: https://blogs.nvidia.com/feed/
+  notes: "NVIDIA AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-nvidia-developer-ai
+  url: https://developer.nvidia.com/blog/category/artificial-intelligence/
+  label: NVIDIA Developer AI
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_0
+  feed_url: https://developer.nvidia.com/blog/category/artificial-intelligence/feed
+  notes: "NVIDIA Developer AI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-amd-newsroom
+  url: https://www.amd.com/en/newsroom.html
+  label: AMD Newsroom
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_0
+  feed_url: null
+  notes: "AMD Newsroom \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-intel-ai-blog
+  url: https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/bg-p/blog-ai
+  label: Intel AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Intel AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-arm-ai-blog
+  url: https://developer.arm.com/community/arm-community-blogs/b/ai-blog
+  label: Arm AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Arm AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-qualcomm-ai-research
+  url: https://www.qualcomm.com/research/artificial-intelligence
+  label: Qualcomm AI Research
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Qualcomm AI Research \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-broadcom-blog
+  url: https://www.broadcom.com/blog
+  label: Broadcom Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Broadcom Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-marvell-ai-blog
+  url: https://www.marvell.com/blogs.html?category=blogs%3Acategories%2Fai
+  label: Marvell AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Marvell AI Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: Cloudflare WAF blocks non-browser\
+    \ UA on both index and sitemap (403). Needs Apify/proxy adapter."
+  spa_extraction:
+    enabled: false
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-tsmc-hpc
+  url: https://www.tsmc.com/english/dedicatedFoundry/technology/platform_HPC
+  label: TSMC HPC
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_0
+  feed_url: null
+  notes: "TSMC HPC \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA; needs\
+    \ alternate adapter (Apify/Firecrawl)"
+- id: src-rss-samsung-semiconductor
+  url: https://semiconductor.samsung.com/news-events/
+  label: Samsung Semiconductor
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Samsung Semiconductor \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate\
+    \ SPA; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-sk-hynix-newsroom
+  url: https://news.skhynix.com/
+  label: SK hynix Newsroom
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_0
+  feed_url: https://news.skhynix.com/feed/
+  notes: "SK hynix Newsroom \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-micron-blog
+  url: https://www.micron.com/about/blog
+  label: Micron Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_0
+  feed_url: null
+  notes: "Micron Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA;\
+    \ needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-asml-stories
+  url: https://www.asml.com/en/news/stories
+  label: ASML Stories
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "ASML Stories \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA;\
+    \ needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-applied-materials-blog
+  url: https://www.appliedmaterials.com/us/en/blog.html
+  label: Applied Materials Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Applied Materials Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-lam-research-blog
+  url: https://blog.lamresearch.com/
+  label: Lam Research Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: https://newsroom.lamresearch.com/press-releases?pagetemplate=rss
+  notes: "Lam Research Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-kla-news
+  url: https://www.kla.com/advance/
+  label: KLA News
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "KLA News \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA; needs\
+    \ alternate adapter (Apify/Firecrawl)"
+- id: src-rss-cadence-blog
+  url: https://community.cadence.com/cadence_blogs_8/
+  label: Cadence Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: https://community.cadence.com/rss
+  notes: "Cadence Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-synopsys-blog
+  url: https://www.synopsys.com/blogs.html
+  label: Synopsys Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Synopsys Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-supermicro-resources
+  url: https://www.supermicro.com/en/resource-center
+  label: Supermicro Resources
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Supermicro Resources \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate\
+    \ SPA; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-dell-ai-blog
+  url: https://www.dell.com/en-us/blog/tags/artificial-intelligence/
+  label: Dell AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: https://www.dell.com/en-us/blog/tags/artificial-intelligence/feed/
+  notes: "Dell AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-hpe-ai-blog
+  url: https://www.hpe.com/us/en/newsroom/blog-posts/artificial-intelligence.html
+  label: HPE AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "HPE AI Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA;\
+    \ needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-lenovo-ai-infrastructure
+  url: https://www.lenovo.com/us/en/servers-storage/solutions/ai/
+  label: Lenovo AI Infrastructure
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Lenovo AI Infrastructure \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014\
+    \ corporate SPA; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-vertiv-blog
+  url: https://www.vertiv.com/en-us/about/news-and-insights/vertiv-blog/
+  label: Vertiv Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: https://www.vertiv.com/en-us/about/news-and-insights/vertiv-blog/rss
+  notes: "Vertiv Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-schneider-electric-dc-blog
+  url: https://blog.se.com/datacenter/
+  label: Schneider Electric DC Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: https://blog.se.com/datacenter/feed/
+  notes: "Schneider Electric DC Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-eaton-dc-blog
+  url: https://www.eaton.com/us/en-us/company/news-insights/blog.html
+  label: Eaton DC Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Eaton DC Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA;\
+    \ needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-siemens-dc-ai
+  url: https://www.siemens.com/en-us/industries/data-centers/ai-workload-infrastructure-management/
+  label: Siemens DC AI
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Siemens DC AI \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA;\
+    \ needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-abb-data-centers
+  url: https://new.abb.com/data-centers
+  label: ABB Data Centers
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "ABB Data Centers \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate\
+    \ SPA; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-ge-vernova-grid
+  url: https://library.grid.gevernova.com/
+  label: GE Vernova Grid
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "GE Vernova Grid \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate\
+    \ SPA; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-bloom-energy-blog
+  url: https://www.bloomenergy.com/blog/
+  label: Bloom Energy Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: https://www.bloomenergy.com/feed/
+  notes: "Bloom Energy Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-oklo-news
+  url: https://oklo.com/newsroom/
+  label: Oklo News
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - semiconductor
+  - tier_1
+  feed_url: null
+  notes: "Oklo News \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 corporate SPA;\
+    \ needs alternate adapter (Apify/Firecrawl)"

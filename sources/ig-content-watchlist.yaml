@@ -1,0 +1,249 @@
+schema_version: "1"
+strategic_role: trust_network
+sources:
+  # --- Direct Competitors & AI Builders ---
+  - id: src-ig-angus-sewell
+    url: https://www.instagram.com/angus.sewell/
+    label: Angus Sewell (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: n8n/AI strategy, SaaS content. Most-engaged IG account (9 likes). Track content formats and engagement.
+  - id: src-ig-agentic-james
+    url: https://www.instagram.com/agentic.james/
+    label: Agentic James (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: MCP, Claude Code, agent building content. Track AI agent positioning and audience response.
+  - id: src-ig-marcinteodoru
+    url: https://www.instagram.com/marcinteodoru/
+    label: Marcin Teodoru (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: OpenClaw, agent deployment content. Track open-source agent positioning.
+  - id: src-ig-mattganzak
+    url: https://www.instagram.com/mattganzak/
+    label: Matt Ganzak (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI automation + social media agency. Track agency positioning and engagement.
+  - id: src-ig-callanfaulkner
+    url: https://www.instagram.com/callanfaulkner/
+    label: Callan Faulkner (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI for business productivity. Track SMB-facing AI content.
+  - id: src-ig-nateherkai
+    url: https://www.instagram.com/nateherkai/
+    label: Nate Herk (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI automation tutorials. Cross-platform with YouTube (src-yt-nate-herk).
+  - id: src-ig-nick-saraev
+    url: https://www.instagram.com/nick_saraev/
+    label: Nick Saraev (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI tools monetization. Cross-platform with YouTube (src-yt-nick-saraev).
+  - id: src-ig-brodyautomates
+    url: https://www.instagram.com/brodyautomates/
+    label: Brody Automates (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI automations content. Track automation agency positioning.
+  - id: src-ig-liambuilds-ai
+    url: https://www.instagram.com/liambuilds.ai/
+    label: Liam Builds AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI builder content. Track build-in-public engagement patterns.
+  - id: src-ig-nathanhodgson-ai
+    url: https://www.instagram.com/nathanhodgson.ai/
+    label: Nathan Hodgson AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI agency builder. Track agency launch content.
+  - id: src-ig-chase-h-ai
+    url: https://www.instagram.com/chase.h.ai/
+    label: Chase H AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI builder content.
+  - id: src-ig-noevarner-ai
+    url: https://www.instagram.com/noevarner.ai/
+    label: Noe Varner AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI builder content.
+  - id: src-ig-sferro-ai
+    url: https://www.instagram.com/sferro.ai/
+    label: Sferro AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI builder content.
+  - id: src-ig-alassafi-ai
+    url: https://www.instagram.com/alassafi.ai/
+    label: Alassafi AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: Claude/AI content creator. Track Claude-specific positioning.
+  - id: src-ig-eluna-ai
+    url: https://www.instagram.com/eluna.ai/
+    label: Eluna AI (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: AI news, OpenClaw coverage.
+  - id: src-ig-chorus-com
+    url: https://www.instagram.com/chorus_com/
+    label: Chorus (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: SaaS agent tools. Track agent infrastructure positioning.
+  - id: src-ig-softgirlnocode
+    url: https://www.instagram.com/softgirlnocode/
+    label: Softgirlnocode (Instagram)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: pending
+    tags: [ig_competitor, content_tracking]
+    notes: No-code AI building. Track accessibility-angle AI content.
+  # --- Content Strategists & Format References ---
+  - id: src-ig-askcatgpt
+    url: https://www.instagram.com/askcatgpt/
+    label: AskCatGPT (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: AI tips to Masterclass pipeline. Study hook formats, CTA patterns, engagement.
+  - id: src-ig-briarcochran
+    url: https://www.instagram.com/briarcochran/
+    label: Briar Cochran (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: Content format taxonomy education. Study format naming and strategist-coded content.
+  - id: src-ig-personalbrandlaunch
+    url: https://www.instagram.com/personalbrandlaunch/
+    label: Personal Brand Launch (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: AI content workflow breakdowns. Study AI integration into content workflows.
+  - id: src-ig-iamchrischung
+    url: https://www.instagram.com/iamchrischung/
+    label: Chris Chung (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: Content strategy frameworks. Study strategy-first content approach.
+  - id: src-ig-sabrina-ramonov
+    url: https://www.instagram.com/sabrina_ramonov/
+    label: Sabrina Ramonov (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: Claude AI video content pipeline. Study AI-to-video production format and CTA.
+  - id: src-ig-orenmeetsworld
+    url: https://www.instagram.com/orenmeetsworld/
+    label: Oren Meets World (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: Brand marketing content-first approach. Study brand positioning content.
+  - id: src-ig-minolee
+    url: https://www.instagram.com/minolee.mp4/
+    label: Minolee (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: Personal brand growth without existing authority. Study zero-to-one brand building.
+  - id: src-ig-iamjadenly
+    url: https://www.instagram.com/iamjadenly/
+    label: Jadenly (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: Value vs informational content. Study engagement depth patterns.
+  - id: src-ig-sam-gaudet
+    url: https://www.instagram.com/sam.gaudet/
+    label: Sam Gaudet (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: AI tools for content creation. Study tool review format.
+  - id: src-ig-danmartell
+    url: https://www.instagram.com/danmartell/
+    label: Dan Martell (Instagram)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [ig_content_strategist, content_tracking]
+    notes: SaaS business content. Cross-platform with YouTube. Study short-form business content.
+

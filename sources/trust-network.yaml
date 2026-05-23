@@ -1,0 +1,165 @@
+schema_version: "1"
+strategic_role: trust_network
+sources:
+  - id: src-hormozi-youtube
+    url: https://www.youtube.com/@AlexHormozi
+    label: Alex Hormozi (YouTube)
+    kind: youtube
+    strategic_role: trust_network
+    health: healthy
+    status: active
+    tags: [business_strategy]
+    channel_id: UCUyDOdBWhC1MCxEjC46d-zw
+    notes: Business frameworks, offer design, scaling. Core business strategy reference.
+  - id: src-acquisition-com
+    url: https://www.acquisition.com
+    label: Acquisition.com
+    kind: web_page
+    strategic_role: trust_network
+    health: healthy
+    status: active
+    tags: [business_strategy]
+    notes: Hormozi ecosystem hub. Content, frameworks, community.
+  - id: src-liam-ottley-youtube
+    url: https://www.youtube.com/@LiamOttley
+    label: Liam Ottley (YouTube)
+    kind: youtube
+    strategic_role: trust_network
+    health: healthy
+    status: active
+    tags: [ai_agency]
+    channel_id: UCui4jxDaMb53Gdh-AZUTPAg
+    notes: AI agency creator. AAA Accelerator. Drives awareness of AI agency model among potential customers and competitors.
+  - id: src-yt-greg-isenberg
+    url: https://www.youtube.com/channel/UCPjNBjflYl0-HQtUvOx0Ibw
+    label: Greg Isenberg
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency]
+    channel_id: UCPjNBjflYl0-HQtUvOx0Ibw
+    notes: Startup ideas and AI business tutorials. High-signal for productizable service ideas.
+  - id: src-yt-nick-saraev
+    url: https://www.youtube.com/channel/UCbo-KbSjJDG6JWQ_MTZ_rNA
+    label: Nick Saraev
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency]
+    channel_id: UCbo-KbSjJDG6JWQ_MTZ_rNA
+    notes: AI tools monetization with N8N, Claude Code. Direct competitor intelligence for AI automation services.
+  - id: src-yt-nate-herk
+    url: https://www.youtube.com/channel/UC2ojq-nuP8ceeHqiroeKhBA
+    label: Nate Herk
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency]
+    channel_id: UC2ojq-nuP8ceeHqiroeKhBA
+    notes: AI automations for businesses. Competitor intelligence for AI automation agency positioning.
+  - id: src-yt-serge-gatari
+    url: https://www.youtube.com/channel/UCrJlKsfZLj6ZLYlPwo1uZCw
+    label: Serge Gatari
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency]
+    channel_id: UCrJlKsfZLj6ZLYlPwo1uZCw
+    notes: AI economy growth layer, vertical AI. Competitor intelligence on go-to-market approaches.
+  # --- ICP-adjacent / AI-agency X voices (Phase 1: handles seeded ahead of X archive import 2026-05-22) ---
+  # Handles below are best-guess from public profiles. If a handle 404s on first Apify pull, prune or correct.
+  - id: src-x-alex-hormozi
+    url: https://x.com/AlexHormozi
+    label: Alex Hormozi (@AlexHormozi)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [business_strategy, ai_agency, x_watchlist]
+    notes: Mirror of src-hormozi-youtube on X. Offer design + scaling content.
+  - id: src-x-nick-saraev
+    url: https://x.com/nicksaraev
+    label: Nick Saraev (@nicksaraev)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice, x_watchlist]
+    notes: Mirror of src-yt-nick-saraev. N8N + Claude Code monetization content.
+  - id: src-x-nate-herk
+    url: https://x.com/nateherk
+    label: Nate Herk (@nateherk)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice, x_watchlist]
+    notes: Mirror of src-yt-nate-herk. AI automation agency content.
+  - id: src-x-serge-gatari
+    url: https://x.com/SergeGatari
+    label: Serge Gatari (@SergeGatari)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice, x_watchlist]
+    notes: Mirror of src-yt-serge-gatari. Vertical AI + agency GTM content.
+  - id: src-x-greg-isenberg
+    url: https://x.com/gregisenberg
+    label: Greg Isenberg (@gregisenberg)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice, x_watchlist]
+    notes: Mirror of src-yt-greg-isenberg. Startup ideas + productizable services.
+  - id: src-x-wyatt-roderick
+    url: https://x.com/WyattRoderick
+    label: Wyatt Roderick (@WyattRoderick)
+    kind: social_platform
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice, x_watchlist]
+    notes: Mirror of src-yt-wyatt-roderick. AI agency content creator.
+  # --- Competitor YouTube voices (monitor content + positioning) ---
+  - id: src-yt-cameron-england
+    url: https://www.youtube.com/@Cameron.England
+    label: Cameron England (YouTube)
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice]
+    notes: "Scale Army / License & Scale founder. AI enablement content. Cross-ref src-comp-scalearmy, src-comp-licenseandscale."
+  - id: src-yt-tyson4d
+    url: https://www.youtube.com/@Tyson4D
+    label: Tyson Scales (YouTube)
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice]
+    notes: "4D Academy. AI agency training content. Cross-ref src-sub-tyson4d."
+  - id: src-yt-wyatt-roderick
+    url: https://www.youtube.com/@WyattRoderick
+    label: Wyatt Roderick (YouTube)
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice]
+    notes: "AI agency content creator."
+  - id: src-yt-enzo-sison
+    url: https://www.youtube.com/@EnzoSison
+    label: Enzo Sison (YouTube)
+    kind: youtube
+    strategic_role: trust_network
+    health: unknown
+    status: active
+    tags: [ai_agency, competitor_voice]
+    notes: "AI agency builder content."

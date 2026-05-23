@@ -1,0 +1,21 @@
+schema_version: "1"
+strategic_role: review_aggregator
+sources:
+  - id: src-g2
+    url: https://www.g2.com
+    label: G2
+    kind: review_aggregator
+    strategic_role: review_aggregator
+    health: healthy
+    status: active
+    tags: [software_reviews]
+    notes: Software review site. Mine for customer pain points, competitor positioning, and feature gaps.
+  - id: src-capterra
+    url: https://www.capterra.com
+    label: Capterra
+    kind: review_aggregator
+    strategic_role: review_aggregator
+    health: healthy
+    status: active
+    tags: [software_reviews]
+    notes: Software review site. Cross-reference with G2 for pain point validation.

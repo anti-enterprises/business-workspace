@@ -1,0 +1,63 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.pnpm-store/
+
+# Build output
+build/
+dist/
+coverage/
+.swc/
+*.tsbuildinfo
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+.secret*
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+
+# Editor
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# direnv
+.envrc
+
+# SSL certificates (generated locally)
+certs/
+
+# Claude Code local state
+.claude/
+
+# gstack
+.gstack/
+
+# Worktrees
+.worktrees/
+
+# Local devcontainer auth state (repo-local only)
+.devcontainer/.state/
+.devcontainer/.auth/
+.devcontainer/.secrets/
+
+# hyperresearch runtime DB (vault state, not source)
+.hyperresearch/hyperresearch.db
+.hyperresearch/hyperresearch.db-shm
+.hyperresearch/hyperresearch.db-wal

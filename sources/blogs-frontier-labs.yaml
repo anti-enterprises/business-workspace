@@ -1,0 +1,435 @@
+schema_version: '1'
+strategic_role: industry_signal
+sources:
+- id: src-rss-openai-news
+  url: https://openai.com/news/
+  label: OpenAI News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  - daily_slot
+  feed_url: https://openai.com/news/rss.xml
+  notes: "OpenAI News \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-openai-developer-blog
+  url: https://developers.openai.com/blog
+  label: OpenAI Developer Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: https://developers.openai.com/rss.xml
+  notes: "OpenAI Developer Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-anthropic-news
+  url: https://www.anthropic.com/news
+  label: Anthropic News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Anthropic News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://www\.anthropic\.com/news/[\w-]+/?$
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-anthropic-research
+  url: https://www.anthropic.com/research
+  label: Anthropic Research
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  - daily_slot
+  feed_url: null
+  notes: "Anthropic Research \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://www\.anthropic\.com/research/[\w-]+/?$
+    max_posts_per_run: 6
+    post_age_days: 21
+- id: src-rss-google-deepmind-blog
+  url: https://deepmind.google/blog/
+  label: Google DeepMind Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: https://deepmind.google/blog/feed
+  notes: "Google DeepMind Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-google-research-blog
+  url: https://research.google/blog/
+  label: Google Research Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: https://research.google/blog/rss
+  notes: "Google Research Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-meta-ai-blog
+  url: https://ai.meta.com/blog/
+  label: Meta AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Meta AI Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-llama-official
+  url: https://www.llama.com/
+  label: Llama official
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Llama official \u2014 RSS feed for industry signal monitoring. | feed-discovery: no extractable post structure \u2014\
+    \ marketing landing page"
+- id: src-rss-mistral-ai-news
+  url: https://mistral.ai/news
+  label: Mistral AI News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Mistral AI News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://mistral\.ai/news/[\w-]+/?$
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-xai-news
+  url: https://x.ai/news
+  label: xAI News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "xAI News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-cohere-blog
+  url: https://cohere.com/blog
+  label: Cohere Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: null
+  notes: "Cohere Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://cohere\.com/blog/[\w-]+/?$
+    exclude_pattern: /(category|tag|author)/
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-ai21-blog
+  url: https://www.ai21.com/blog/
+  label: AI21 Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: null
+  notes: "AI21 Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-deepseek-news
+  url: https://api-docs.deepseek.com/news
+  label: DeepSeek News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "DeepSeek News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-qwen-blog
+  url: https://qwen.ai/blog
+  label: Qwen Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Qwen Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: Canonical URL shifted; qwen.ai/blog\
+    \ \u2192 405 + sitemap 404. Needs URL re-discovery (likely on qwen-ai.com or huggingface.co)."
+  spa_extraction:
+    enabled: false
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-baidu-ernie-blog
+  url: https://ernie.baidu.com/blog/
+  label: Baidu ERNIE Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://ernie.baidu.com/blog/index.xml
+  notes: "Baidu ERNIE Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-z-ai-glm-blog
+  url: https://z.ai/blog
+  label: Z.ai / GLM Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Z.ai / GLM Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-kimi-moonshot-blog
+  url: https://www.kimi.com/blog/
+  label: Kimi / Moonshot Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "Kimi / Moonshot Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-minimax-news
+  url: https://www.minimax.io/news
+  label: MiniMax News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_0
+  feed_url: null
+  notes: "MiniMax News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-tencent-hunyuan
+  url: https://hunyuan.tencent.com/
+  label: Tencent Hunyuan
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: null
+  notes: "Tencent Hunyuan \u2014 RSS feed for industry signal monitoring. | feed-discovery: no extractable post structure\
+    \ \u2014 single-page Chinese product site"
+- id: src-rss-bytedance-seed
+  url: https://seed.bytedance.com/en/
+  label: ByteDance Seed
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: null
+  notes: "ByteDance Seed \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-stability-ai-news
+  url: https://stability.ai/news-updates
+  label: Stability AI News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://stability.ai/news-updates?format=rss
+  notes: "Stability AI News \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-nous-research-blog
+  url: https://nousresearch.com/
+  label: Nous Research Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: null
+  notes: "Nous Research Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 21
+    post_link_pattern: ^https://nousresearch\.com/[a-z][\w-]*/?$
+    exclude_pattern: ^https://nousresearch\.com/(blog|careers|releases|about|contact|privacy|terms|wp-json|cdn-cgi|wp-content|favicon|sitemap)/?$
+- id: src-rss-tii-falcon-blog
+  url: https://falcon-lm.github.io/blog/
+  label: TII Falcon Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://falcon-lm.github.io/blog/index.xml
+  notes: "TII Falcon Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-allen-ai-blog
+  url: https://allenai.org/blog
+  label: Allen AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://allenai.org/rss.xml
+  notes: "Allen AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-ibm-granite
+  url: https://www.ibm.com/granite
+  label: IBM Granite
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://www.ibm.com/research/rss
+  notes: "IBM Granite \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-liquid-ai-blog
+  url: https://www.liquid.ai/company/blog
+  label: Liquid AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://www.liquid.ai/blog/rss.xml
+  notes: "Liquid AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-reka-news
+  url: https://reka.ai/news
+  label: Reka News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: null
+  notes: "Reka News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-nomic-blog
+  url: https://www.nomic.ai/blog
+  label: Nomic Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://www.nomic.ai/feed.xml
+  notes: "Nomic Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-databricks-ai
+  url: https://www.databricks.com/blog/category/artificial-intelligence
+  label: Databricks AI
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://www.databricks.com/feed
+  notes: "Databricks AI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-snowflake-ai
+  url: https://www.snowflake.com/en/blog/category/artificial-intelligence/
+  label: Snowflake AI
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - frontier_labs
+  - tier_1
+  feed_url: https://www.snowflake.com/rss
+  notes: "Snowflake AI \u2014 RSS feed for industry signal monitoring."

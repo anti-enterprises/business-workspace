@@ -1,0 +1,642 @@
+schema_version: "1"
+strategic_role: industry_signal
+sources:
+  - id: src-llm-stats
+    url: https://llm-stats.com
+    label: LLM Stats
+    kind: web_page
+    strategic_role: industry_signal
+    health: healthy
+    status: active
+    tags: [market_signal]
+    notes: LLM benchmarks and performance tracking. Monitor for model capability shifts that affect service delivery.
+  - id: src-huggingface
+    url: https://huggingface.co
+    label: Hugging Face
+    kind: web_page
+    strategic_role: industry_signal
+    health: healthy
+    status: active
+    tags: [technical_learning]
+    notes: AI model hub. Track trending models, new capabilities, open-source tooling that could be productized.
+  - id: src-producthunt
+    url: https://www.producthunt.com
+    label: Product Hunt
+    kind: web_page
+    strategic_role: industry_signal
+    health: healthy
+    status: active
+    tags: [market_signal]
+    notes: New AI product launches. Monitor for competitor products, adjacent tools, and market trends.
+  - id: src-arxiv
+    url: https://arxiv.org
+    label: arXiv (AI papers)
+    kind: web_page
+    strategic_role: industry_signal
+    health: healthy
+    status: active
+    tags: [technical_learning]
+    notes: AI research papers. Track breakthrough research that could translate to client deliverables.
+  - id: src-yt-ai-explained
+    url: https://www.youtube.com/channel/UCNJ1Ymd5yFuUPtn21xtRbbw
+    label: AI Explained
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCNJ1Ymd5yFuUPtn21xtRbbw
+    notes: AI news and analysis. Covers model releases, capabilities, and strategic implications.
+  - id: src-yt-matt-wolfe
+    url: https://www.youtube.com/channel/UChpleBmo18P08aKCIgti38g
+    label: Matt Wolfe
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UChpleBmo18P08aKCIgti38g
+    notes: AI tools curation. What actually matters in the noise — product launches, tool comparisons.
+  - id: src-yt-ai-jason
+    url: https://www.youtube.com/channel/UCrXSVX9a1mj8l0CMLwKgMVw
+    label: AI Jason
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCrXSVX9a1mj8l0CMLwKgMVw
+    notes: AI product experiments. Practical product design lens on new AI tools.
+  - id: src-yt-zain-kahn
+    url: https://www.youtube.com/channel/UCKV3jLY7zfo7FTyrZk2cAEg
+    label: Zain Kahn
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCKV3jLY7zfo7FTyrZk2cAEg
+    notes: AI productivity and business leverage. How business owners think about AI adoption.
+  - id: src-yt-rowan-cheung
+    url: https://www.youtube.com/channel/UC8LUzR34nNX8KH3Edd0un1g
+    label: Rowan Cheung
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UC8LUzR34nNX8KH3Edd0un1g
+    notes: AI industry interviews. What's real vs hype — market sentiment signals.
+  - id: src-yt-theaigrid
+    url: https://www.youtube.com/channel/UCbY9xX3_jW5c2fjlZVBI4cg
+    label: TheAIGRID
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCbY9xX3_jW5c2fjlZVBI4cg
+    notes: AI research and developments digest. Broad coverage of ML, NLP, and product launches.
+  - id: src-yt-ai-daily-brief
+    url: https://www.youtube.com/channel/UCKelCK4ZaO6HeEI1KQjqzWA
+    label: AI Daily Brief
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCKelCK4ZaO6HeEI1KQjqzWA
+    notes: Daily AI news digest. Quick-scan for breaking developments and market shifts.
+  - id: src-yt-wes-roth
+    url: https://www.youtube.com/channel/UCqcbQf6yw5KzRoDDcZ_wBSw
+    label: Wes Roth
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCqcbQf6yw5KzRoDDcZ_wBSw
+    notes: AI and ML news commentary. Industry trend analysis.
+  - id: src-yt-matthew-berman
+    url: https://www.youtube.com/channel/UCawZsQWqfGSbCI5yjkdVkTA
+    label: Matthew Berman
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCawZsQWqfGSbCI5yjkdVkTA
+    notes: AI accessibility and demos. How non-technical audiences discover AI capabilities.
+  - id: src-yt-semianalysis
+    url: https://www.youtube.com/channel/UCf_KhBXw5TIV0A7butjgFhg
+    label: SemiAnalysis
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCf_KhBXw5TIV0A7butjgFhg
+    notes: Semiconductor and AI infrastructure analysis. Supply-side signals for model costs and capabilities.
+  - id: src-yt-coldfusion
+    url: https://www.youtube.com/channel/UC4QZ_LsYcvcq7qOsOhpAX4A
+    label: ColdFusion
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UC4QZ_LsYcvcq7qOsOhpAX4A
+    notes: Tech documentaries and AI macro trends. Long-form industry context.
+  - id: src-yt-3blue1brown
+    url: https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw
+    label: 3Blue1Brown
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCYO_jab_esuFRV4b17AJtAw
+    notes: Math/ML education. Visual explanations of neural nets and linear algebra foundations.
+  - id: src-yt-abhishek-thakur
+    url: https://www.youtube.com/channel/UCBPRJjIWfyNG4X-CRbnv78A
+    label: Abhishek Thakur
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCBPRJjIWfyNG4X-CRbnv78A
+    notes: Applied ML workflows. Kaggle-style practical demonstrations.
+  - id: src-yt-andrej-karpathy
+    url: https://www.youtube.com/channel/UCXUPKJO5MZQN11PqgIvyuvQ
+    label: Andrej Karpathy
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCXUPKJO5MZQN11PqgIvyuvQ
+    notes: Deep learning from first principles. Authoritative source on neural network internals.
+  - id: src-yt-codebasics
+    url: https://www.youtube.com/channel/UCh9nVJoWXmFb7sLApWGcLPQ
+    label: codebasics
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCh9nVJoWXmFb7sLApWGcLPQ
+    notes: ML/AI tutorials for practitioners. Step-by-step implementation guides.
+  - id: src-yt-data-professor
+    url: https://www.youtube.com/channel/UCV8e2g4IWQqK71bbzGDEI4Q
+    label: Data Professor
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCV8e2g4IWQqK71bbzGDEI4Q
+    notes: Data science education. Accessible ML content for non-specialists.
+  - id: src-yt-deeplearningai
+    url: https://www.youtube.com/channel/UCcIXc5mJsHVYTZR1maL5l9w
+    label: DeepLearningAI
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCcIXc5mJsHVYTZR1maL5l9w
+    notes: Andrew Ng's AI courses. Industry-standard educational content.
+  - id: src-yt-hugging-face
+    url: https://www.youtube.com/channel/UCHlNU7kIZhRgSbhHvFoy72w
+    label: Hugging Face (YouTube)
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCHlNU7kIZhRgSbhHvFoy72w
+    notes: ML platform videos. Open-source model ecosystem updates.
+  - id: src-yt-krish-naik
+    url: https://www.youtube.com/channel/UCNU_lfiiWBdtULKOw6X0Dig
+    label: Krish Naik
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCNU_lfiiWBdtULKOw6X0Dig
+    notes: ML engineering education. End-to-end project demonstrations.
+  - id: src-yt-lex-fridman
+    url: https://www.youtube.com/channel/UCSHZKyawb77ixDdsGog4iWA
+    label: Lex Fridman
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCSHZKyawb77ixDdsGog4iWA
+    notes: Long-form interviews with AI leaders. Macro industry perspectives.
+  - id: src-yt-mlst
+    url: https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ
+    label: Machine Learning Street Talk
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCMLtBahI5DMrt0NPvDSoIRQ
+    notes: Technical AI podcast. Deep research discussions on model architectures.
+  - id: src-yt-ai-with-hassan
+    url: https://www.youtube.com/channel/UC7JIdd6JEcDHe1nQNbA8lvg
+    label: AI with Hassan
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UC7JIdd6JEcDHe1nQNbA8lvg
+    notes: AI practitioner tutorials. Hands-on implementation guides.
+  - id: src-yt-mark-kashef
+    url: https://www.youtube.com/channel/UCHkzp52CldSPZqU5T49mOnA
+    label: Mark Kashef
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCHkzp52CldSPZqU5T49mOnA
+    notes: AI/NLP expert content. Data science and NLP deep dives.
+  - id: src-yt-nicholas-renotte
+    url: https://www.youtube.com/channel/UCHXa4OpASJEwrHrLeIzw7Yg
+    label: Nicholas Renotte
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCHXa4OpASJEwrHrLeIzw7Yg
+    notes: Python/ML project tutorials. Practical build-along content.
+  - id: src-yt-sam-witteveen
+    url: https://www.youtube.com/channel/UC55ODQSvARtgSyc8ThfiepQ
+    label: Sam Witteveen
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UC55ODQSvARtgSyc8ThfiepQ
+    notes: Transformers and LLM implementations. Advanced technical walkthroughs.
+  - id: src-yt-sentdex
+    url: https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ
+    label: sentdex
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCfzlCWGWYyIQ0aLC5w48gBQ
+    notes: Python/ML programming. Financial ML and reinforcement learning content.
+  - id: src-yt-statquest
+    url: https://www.youtube.com/channel/UCtYLUTtgS3k1Fg4y5tAhLbw
+    label: StatQuest
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCtYLUTtgS3k1Fg4y5tAhLbw
+    notes: Statistics/ML education. Clear visual explanations of complex concepts.
+  - id: src-yt-yannic-kilcher
+    url: https://www.youtube.com/channel/UCZHmQk67mSJgfCCTn7xBfew
+    label: Yannic Kilcher
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCZHmQk67mSJgfCCTn7xBfew
+    notes: ML paper reviews. Research trend analysis and commentary.
+  - id: src-yt-zen-van-riel
+    url: https://www.youtube.com/channel/UC7TUInmEJ4NmYb-krFz-SuA
+    label: Zen van Riel
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UC7TUInmEJ4NmYb-krFz-SuA
+    notes: AI engineering career content. Professional development in AI.
+  - id: src-yt-nlp-news
+    url: https://www.youtube.com/channel/UCAJQQRbmjXpIY03dCSft1KA
+    label: NLP News
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCAJQQRbmjXpIY03dCSft1KA
+    notes: NLP/LLM research updates. Language model developments tracker.
+  - id: src-yt-venture-city
+    url: https://www.youtube.com/channel/UCENRvVys9nMpQpENGeL8NEg
+    label: Venture City
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCENRvVys9nMpQpENGeL8NEg
+    notes: Sci-fi tech documentaries. Future technology exploration content.
+  - id: src-yt-mo-gawdat
+    url: https://www.youtube.com/channel/UCilMYYyoot7vhLn4Tinzmmg
+    label: Mo Gawdat
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [technical_learning]
+    channel_id: UCilMYYyoot7vhLn4Tinzmmg
+    notes: AI and society perspectives. Macro trends in technology ethics and impact.
+
+  # --- Agentic Commerce Research ---
+  - id: src-theaipraxis
+    url: https://www.theaipraxis.com
+    label: The AI Praxis
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [agentic_commerce, market_signal]
+    notes: "Paul F. Accornero. Agentic commerce analysis. 'Shopper Schism' concept. Strategic intelligence on autonomous commercial ecosystems."
+  - id: src-stellagent
+    url: https://stellagent.ai
+    label: Stellagent
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [agentic_commerce, market_signal]
+    notes: "Agentic commerce market research. Infrastructure rankings (Mastercard, Visa, Stripe). Market sizing and forecasts."
+
+  # --- VC Firms / Thought Leadership ---
+  - id: src-sequoia-blog
+    url: https://www.sequoiacap.com/articles/
+    label: Sequoia Capital Blog
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [vc_funding, thought_leadership]
+    notes: "Sequoia thought leadership. AI market theses, pattern recognition, portfolio company signals. Moves the industry."
+  - id: src-a16z-blog
+    url: https://a16z.com/ai/
+    label: a16z AI Blog
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [vc_funding, thought_leadership]
+    notes: "Andreessen Horowitz AI thought leadership. Market maps, investment theses, infrastructure takes. Defines narrative for AI industry direction."
+  - id: src-crunchbase-news
+    url: https://news.crunchbase.com
+    label: Crunchbase News
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [vc_funding, market_signal]
+    notes: "Funding announcements and deal flow. Track competitor funding rounds and agentic economy investment trends."
+  - id: src-yt-20vc
+    url: https://www.youtube.com/@20aborat
+    label: 20VC (Harry Stebbings)
+    kind: youtube
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [vc_funding, thought_leadership]
+    notes: "Top VC podcast. Interviews with investors backing agentic companies. Funding signals and market thesis formation."
+
+  # --- GitHub Trending (developer attention signals) ---
+  - id: src-github-trending
+    url: https://github.com/trending
+    label: GitHub Trending (All)
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_trending, developer_signal]
+    notes: "Daily trending repos. Surface new projects gaining rapid traction. Developer energy = adoption signal."
+  - id: src-github-trending-python
+    url: https://github.com/trending/python
+    label: GitHub Trending (Python)
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_trending, developer_signal]
+    notes: "Python trending. Agent frameworks, LLM tools, MCP servers — Python is the lingua franca for AI agents."
+  - id: src-github-trending-typescript
+    url: https://github.com/trending/typescript
+    label: GitHub Trending (TypeScript)
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_trending, developer_signal]
+    notes: "TypeScript trending. MCP tools, web agents, Claude Code ecosystem — AE's stack."
+
+  # --- GitHub Repos to Watch (protocol + framework adoption signals) ---
+  - id: src-gh-mcp-spec
+    url: https://github.com/modelcontextprotocol/specification
+    label: MCP Specification
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [protocol_watch, github_repo]
+    notes: "MCP spec evolution. Settled protocol — watch for breaking changes, enterprise readiness features, auth model updates."
+  - id: src-gh-google-a2a
+    url: https://github.com/google/A2A
+    label: Google A2A Protocol
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [protocol_watch, github_repo]
+    notes: "A2A protocol repo. Convergence direction from ACP. Agent Cards, task model, discovery spec."
+  - id: src-gh-n8n
+    url: https://github.com/n8n-io/n8n
+    label: n8n
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "Dominant AAA orchestration layer. Star velocity = competitor tool adoption signal."
+  - id: src-gh-langchain
+    url: https://github.com/langchain-ai/langchain
+    label: LangChain
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "Agent framework adoption signal. Part of convergent AAA stack."
+  - id: src-gh-crewai
+    url: https://github.com/crewAIInc/crewAI
+    label: CrewAI
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "Multi-agent framework. Competitor stack convergence signal."
+  - id: src-gh-claude-code
+    url: https://github.com/anthropics/claude-code
+    label: Claude Code
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, protocol_watch]
+    notes: "AE's own tooling ecosystem. Feature velocity, MCP integration evolution."
+  - id: src-gh-hermes-agent
+    url: https://github.com/NousResearch/hermes-agent
+    label: Hermes Agent (Nous Research)
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "Self-improving AI agent with learning loop. 23K+ stars. Skills from experience, multi-platform (17 messaging platforms). Shows where personal AI agents are heading."
+  - id: src-gh-openclaw
+    url: https://github.com/openclaw/openclaw
+    label: OpenClaw
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "Personal AI assistant — any OS, any platform. Self-hosted, 24+ channels. OpenClaw-RL adds conversation-to-training loop. Watch for commoditization of personal agent deployment."
+  - id: src-gh-paperclip
+    url: https://github.com/paperclipai/paperclip
+    label: Paperclip
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "'Zero-human companies' orchestration. Agent teams with budget enforcement, approval gates, rollback. Directly relevant to AITP governance thesis (H008) — shows the agent control plane becoming open-source."
+  - id: src-gh-autoresearch
+    url: https://github.com/karpathy/autoresearch
+    label: AutoResearch (Karpathy)
+    kind: web_page
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [github_repo, developer_signal]
+    notes: "Autonomous research agents running overnight experiments. Single-GPU, 12 experiments/hour. Shows autonomous loop pattern — agent experiments, measures, keeps or discards. Pattern applies to SMB process optimization."
+
+  # --- X / Twitter watchlist: frontier-lab voices + agent-infra operators ---
+  # Seeded 2026-05-22. Phase 1 ahead of the founder's X-archive follow-list import.
+  # All status=active so Apify pulls them on next daily run; any 404 will surface in the coverage ledger.
+  - id: src-x-swyx
+    url: https://x.com/swyx
+    label: Shawn Wang / swyx (@swyx)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, frontier_voice, x_watchlist]
+    notes: "Latent Space podcast + AINews. High-density agent-infra + frontier-lab signal aggregator. Daily-frequency posts."
+  - id: src-x-karpathy
+    url: https://x.com/karpathy
+    label: Andrej Karpathy (@karpathy)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, frontier_voice, x_watchlist]
+    notes: "Eureka Labs founder, ex-OpenAI/Tesla. Frontier-lab thought leadership — when he posts, the field reads it."
+  - id: src-x-simon-willison
+    url: https://x.com/simonw
+    label: Simon Willison (@simonw)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, developer_signal, x_watchlist]
+    notes: "Datasette + LLM tooling. Daily AI-tooling commentary. Mirror of src-rss-simon-willison."
+  - id: src-x-sam-altman
+    url: https://x.com/sama
+    label: Sam Altman (@sama)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, frontier_voice, x_watchlist]
+    notes: "OpenAI CEO. Product announcements + strategic positioning."
+  - id: src-x-greg-brockman
+    url: https://x.com/gdb
+    label: Greg Brockman (@gdb)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, frontier_voice, x_watchlist]
+    notes: "OpenAI president / co-founder. Technical product launches + roadmap signal."
+  - id: src-x-mira-murati
+    url: https://x.com/miramurati
+    label: Mira Murati (@miramurati)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, frontier_voice, x_watchlist]
+    notes: "Thinking Machines founder, ex-OpenAI CTO. Post-OpenAI lab launch trajectory."
+  - id: src-x-brett-adcock
+    url: https://x.com/adcock_brett
+    label: Brett Adcock (@adcock_brett)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, robotics, x_watchlist]
+    notes: "Figure CEO. Humanoid robotics + applied AI weekly recaps."
+  - id: src-x-ethan-mollick
+    url: https://x.com/emollick
+    label: Ethan Mollick (@emollick)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, applied_ai, x_watchlist]
+    notes: "Wharton prof. Applied-AI / workplace-AI commentary — high signal for the SMB-AI-adoption thesis."
+  - id: src-x-amjad-masad
+    url: https://x.com/amasad
+    label: Amjad Masad (@amasad)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, vibe_coding, x_watchlist]
+    notes: "Replit CEO. Vibe-coding + Replit Enterprise positioning. Relevant to H-vibe-coding-jtbd."
+  - id: src-x-balaji
+    url: https://x.com/balajis
+    label: Balaji Srinivasan (@balajis)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, frontier_voice, x_watchlist]
+    notes: "Network State / a16z alum. Macro-AI commentary."
+  - id: src-x-jason-lemkin
+    url: https://x.com/jasonlk
+    label: Jason Lemkin (@jasonlk)
+    kind: social_platform
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal, saas_operator, x_watchlist]
+    notes: "SaaStr founder. SMB-SaaS operator commentary + funding/category signals."
+

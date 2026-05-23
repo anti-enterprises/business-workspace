@@ -1,0 +1,427 @@
+schema_version: '1'
+strategic_role: industry_signal
+sources:
+- id: src-rss-hugging-face-blog
+  url: https://huggingface.co/blog
+  label: Hugging Face Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://huggingface.co/blog/feed.xml
+  notes: "Hugging Face Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-perplexity-hub
+  url: https://www.perplexity.ai/hub
+  label: Perplexity Hub
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Perplexity Hub \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-runway-research
+  url: https://runwayml.com/research
+  label: Runway Research
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Runway Research \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-elevenlabs-blog
+  url: https://elevenlabs.io/blog
+  label: ElevenLabs Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "ElevenLabs Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-synthesia-blog
+  url: https://www.synthesia.io/blog
+  label: Synthesia Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Synthesia Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-heygen-blog
+  url: https://www.heygen.com/blog
+  label: HeyGen Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "HeyGen Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-suno-blog
+  url: https://suno.com/blog
+  label: Suno Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Suno Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-udio-blog
+  url: https://www.udio.com/blog
+  label: Udio Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Udio Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-together-ai-blog
+  url: https://www.together.ai/blog
+  label: Together AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://www.together.ai/blog/rss.xml
+  notes: "Together AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-fireworks-ai-blog
+  url: https://fireworks.ai/blog
+  label: Fireworks AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Fireworks AI Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://fireworks\.ai/blog/[\w-]+/?$
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-groq-blog
+  url: https://groq.com/blog
+  label: Groq Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Groq Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://groq\.com/blog/[\w-]+/?$
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-cerebras-blog
+  url: https://www.cerebras.ai/blog
+  label: Cerebras Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Cerebras Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://www\.cerebras\.ai/blog/[\w-]+/?$
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-langchain-blog
+  url: https://www.langchain.com/blog
+  label: LangChain Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://www.langchain.com/blog/rss.xml
+  notes: "LangChain Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-llamaindex-blog
+  url: https://www.llamaindex.ai/blog
+  label: LlamaIndex Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "LlamaIndex Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    post_link_pattern: ^https://www\.llamaindex\.ai/blog/[\w-]+/?$
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-cursor-blog
+  url: https://cursor.com/blog
+  label: Cursor Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://cursor.com/atom.xml
+  notes: "Cursor Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-cognition-blog
+  url: https://cognition.ai/blog
+  label: Cognition Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://cognition.ai/rss.xml
+  notes: "Cognition Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-replit-blog
+  url: https://blog.replit.com/
+  label: Replit Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://blog.replit.com/feed.xml
+  notes: "Replit Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-github-ai-blog
+  url: https://github.blog/ai-and-ml/
+  label: GitHub AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://github.blog/feed/
+  notes: "GitHub AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-sourcegraph-blog
+  url: https://sourcegraph.com/blog
+  label: Sourcegraph Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://sourcegraph.com/blog/feed.rss
+  notes: "Sourcegraph Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-vercel-blog
+  url: https://vercel.com/blog
+  label: Vercel Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://vercel.com/atom
+  notes: "Vercel Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-baseten-blog
+  url: https://www.baseten.co/blog
+  label: Baseten Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Baseten Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-modal-blog
+  url: https://modal.com/blog
+  label: Modal Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://modal.com/blog/atom.xml
+  notes: "Modal Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-replicate-blog
+  url: https://replicate.com/blog
+  label: Replicate Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://replicate.com/blog/rss
+  notes: "Replicate Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-anyscale-blog
+  url: https://www.anyscale.com/blog
+  label: Anyscale Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://www.anyscale.com/rss.xml
+  notes: "Anyscale Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-scale-ai-blog
+  url: https://scale.com/blog
+  label: Scale AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Scale AI Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-labelbox-blog
+  url: https://labelbox.com/blog
+  label: Labelbox Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Labelbox Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-weights-biases-blog
+  url: https://wandb.ai/site/blog/
+  label: Weights & Biases Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "Weights & Biases Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-arize-ai-blog
+  url: https://arize.com/blog/
+  label: Arize AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://arize.com/feed/
+  notes: "Arize AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-braintrust-blog
+  url: https://www.braintrust.dev/blog
+  label: Braintrust Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: https://www.braintrust.dev/blog/atom
+  notes: "Braintrust Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-e2b-blog
+  url: https://e2b.dev/blog
+  label: E2B Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - developer_tools
+  - tier_1
+  feed_url: null
+  notes: "E2B Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14

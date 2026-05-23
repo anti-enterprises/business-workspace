@@ -1,0 +1,404 @@
+schema_version: '1'
+strategic_role: industry_signal
+sources:
+- id: src-rss-harvard-kempner-news
+  url: https://kempnerinstitute.harvard.edu/news/
+  label: Harvard Kempner News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_0
+  feed_url: https://kempnerinstitute.harvard.edu/feed/
+  notes: "Harvard Kempner News \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-harvard-kempner-science-of-ai
+  url: https://kempnerinstitute.harvard.edu/research/science-of-ai/
+  label: Harvard Kempner Science of AI
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_0
+  feed_url: https://kempnerinstitute.harvard.edu/feed/
+  notes: "Harvard Kempner Science of AI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-stanford-hai-news
+  url: https://hai.stanford.edu/news
+  label: Stanford HAI News
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_0
+  feed_url: null
+  notes: "Stanford HAI News \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-stanford-ai-index
+  url: https://hai.stanford.edu/ai-index
+  label: Stanford AI Index
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_0
+  feed_url: null
+  notes: "Stanford AI Index \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-stanford-ai-lab
+  url: https://ai.stanford.edu/
+  label: Stanford AI Lab
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://ai.stanford.edu/feed/
+  notes: "Stanford AI Lab \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-mit-csail-news
+  url: https://www.csail.mit.edu/news
+  label: MIT CSAIL News
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://www.csail.mit.edu/rss.xml
+  notes: "MIT CSAIL News \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-berkeley-ai-research-blog
+  url: https://bair.berkeley.edu/blog/
+  label: Berkeley AI Research Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://bair.berkeley.edu/blog/feed.xml
+  notes: "Berkeley AI Research Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-cmu-ai
+  url: https://ai.cmu.edu/research-and-policy-impact
+  label: CMU AI
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://ai.cmu.edu/rss
+  notes: "CMU AI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-princeton-pli-blog
+  url: https://pli.princeton.edu/blog
+  label: Princeton PLI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: null
+  notes: "Princeton PLI Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 static\
+    \ HTML; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-oxford-oatml-blog
+  url: https://oatml.cs.ox.ac.uk/blog.html
+  label: Oxford OATML Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: null
+  notes: "Oxford OATML Blog \u2014 RSS feed for industry signal monitoring. | feed-discovery: no public RSS \u2014 static\
+    \ HTML; needs alternate adapter (Apify/Firecrawl)"
+- id: src-rss-ucl-ai-centre-news
+  url: https://www.ucl.ac.uk/engineering/ai-centre/news-events/centre-ai-news
+  label: UCL AI Centre News
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://www.ucl.ac.uk/news/rss.xml
+  notes: "UCL AI Centre News \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-metr-blog
+  url: https://metr.org/blog/
+  label: METR Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_0
+  feed_url: https://metr.org/feed.xml
+  notes: "METR Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-epoch-ai
+  url: https://epoch.ai/latest
+  label: Epoch AI
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_0
+  feed_url: null
+  notes: "Epoch AI \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 21
+    post_link_pattern: ^https://epoch\.ai/(blog|data-insights)/[\w-]+/?$
+- id: src-rss-center-for-ai-safety
+  url: https://safe.ai/blog
+  label: Center for AI Safety
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: null
+  notes: "Center for AI Safety \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-apollo-research-blog
+  url: https://www.apolloresearch.ai/blog/
+  label: Apollo Research Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: null
+  notes: "Apollo Research Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-redwood-research-blog
+  url: https://blog.redwoodresearch.org/
+  label: Redwood Research Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://blog.redwoodresearch.org/feed
+  notes: "Redwood Research Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-far-ai-blog
+  url: https://far.ai/research
+  label: FAR.AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: null
+  notes: "FAR.AI Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 21
+    post_link_pattern: ^https://far\.ai/research/[\w-]+/?$
+- id: src-rss-govai
+  url: https://www.governance.ai/research
+  label: GovAI
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://www.governance.ai/post/rss.xml
+  notes: "GovAI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-georgetown-cset
+  url: https://cset.georgetown.edu/
+  label: Georgetown CSET
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://cset.georgetown.edu/feed/
+  notes: "Georgetown CSET \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-nist-ai
+  url: https://www.nist.gov/artificial-intelligence
+  label: NIST AI
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://www.nist.gov/news-events/ai/rss.xml
+  notes: "NIST AI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-lilian-weng
+  url: https://lilianweng.github.io/
+  label: Lilian Weng
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://lilianweng.github.io/index.xml
+  notes: "Lilian Weng \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-simon-willison
+  url: https://simonwillison.net/
+  label: Simon Willison
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://simonwillison.net/atom/everything/
+  notes: "Simon Willison \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-chip-huyen
+  url: https://huyenchip.com/blog/
+  label: Chip Huyen
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://huyenchip.com/feed.xml
+  notes: "Chip Huyen \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-eugene-yan
+  url: https://eugeneyan.com/writing/
+  label: Eugene Yan
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://eugeneyan.com/rss
+  notes: "Eugene Yan \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-nathan-lambert-interconnects
+  url: https://www.interconnects.ai/
+  label: Nathan Lambert / Interconnects
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://www.interconnects.ai/feed
+  notes: "Nathan Lambert / Interconnects \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-sebastian-raschka-blog
+  url: https://sebastianraschka.com/blog/
+  label: Sebastian Raschka Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://sebastianraschka.com/rss_feed.xml
+  notes: "Sebastian Raschka Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-jay-alammar
+  url: https://jalammar.github.io/
+  label: Jay Alammar
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://jalammar.github.io/feed.xml
+  notes: "Jay Alammar \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-andrej-karpathy
+  url: https://karpathy.ai/
+  label: Andrej Karpathy
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://karpathy.bearblog.dev/feed/?type=rss
+  notes: "Andrej Karpathy \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-distill
+  url: https://distill.pub/
+  label: Distill
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://distill.pub/rss.xml
+  notes: "Distill \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-arxiv-ai-cl
+  url: https://arxiv.org/list/cs.AI/recent
+  label: arXiv AI + CL
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: https://export.arxiv.org/rss/cs.AI
+  notes: "arXiv AI + CL \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-papers-with-code
+  url: https://paperswithcode.com/
+  label: Papers with Code
+  kind: rss
+  strategic_role: industry_signal
+  health: degraded
+  status: active
+  tags:
+  - research
+  - tier_1
+  feed_url: null
+  notes: "Papers with Code \u2014 RSS feed for industry signal monitoring. | feed-discovery: paper aggregator, not a blog\
+    \ \u2014 needs dedicated PWC adapter (out of scope)"

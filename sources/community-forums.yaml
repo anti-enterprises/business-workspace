@@ -1,0 +1,301 @@
+schema_version: "1"
+strategic_role: community_forum
+sources:
+  - id: src-linkedin
+    url: https://www.linkedin.com
+    label: LinkedIn (root, retired)
+    kind: social_platform
+    strategic_role: community_forum
+    health: unknown
+    status: pending
+    tags: [professional_network, retired]
+    notes: |
+      Bare LinkedIn root retired 2026-05-21. Replaced by per-creator
+      sources (src-linkedin-*) scraped via Apify apimaestro/linkedin-profile-posts.
+      Activate individual creator entries below.
+  - id: src-upwork
+    url: https://www.upwork.com/freelancers/ai
+    label: UpWork AI Job Alerts (Gmail)
+    kind: social_platform
+    strategic_role: community_forum
+    health: healthy
+    status: active
+    tags: [marketplace, gmail_backed]
+    notes: |
+      Fetched via Gmail MCP, not by visiting upwork.com. Targets
+      donotreply@upwork.com alerts with subject "New Job" or "Jobs posted
+      in the last 24 hours" (daily digest — 5-10 jobs each). Goal:
+      job-post-pattern analysis (titles, budgets, client locations,
+      demand signals). Out of scope: client messages from
+      room_*@email.upwork.com, "Invitation to Apply" emails, billing.
+      Query builder: execution/sync/extract-upwork.ts.
+  - id: src-yt-all-in-podcast
+    url: https://www.youtube.com/channel/UCESLZhusAkFfsNsApnjF_Cg
+    label: All-In Podcast
+    kind: youtube
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCESLZhusAkFfsNsApnjF_Cg
+    notes: Chamath, Sacks, Calacanis, Friedberg. Tech/business macro takes that shape how SMB owners think about AI.
+  - id: src-yt-dwarkesh-patel
+    url: https://www.youtube.com/channel/UCXl4i9dYBrFOabk0xGmbkRA
+    label: Dwarkesh Patel
+    kind: youtube
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [market_signal]
+    channel_id: UCXl4i9dYBrFOabk0xGmbkRA
+    notes: Deep research interviews with AI leaders. High-signal on where the industry is heading.
+  - id: src-yt-siliconangle
+    url: https://www.youtube.com/channel/UCu3Ri8DI1RQLdVtU12uIp1Q
+    label: SiliconANGLE theCUBE
+    kind: youtube
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [enterprise_tech]
+    channel_id: UCu3Ri8DI1RQLdVtU12uIp1Q
+    notes: "Enterprise tech coverage. IT buyer sentiment and enterprise AI adoption signals."
+
+  # Reddit — community intelligence (24 subreddits)
+  # Tags: msp, icp_voice, ai_agents, ai_market, builder, founder, image_gen
+  # Cadence: weekly (default), monthly (deep review), daily (--tags=msp,icp_voice for high-priority)
+
+  # --- Business / founders (ICP voice) ---
+  - id: reddit-entrepreneur
+    url: https://www.reddit.com/r/Entrepreneur/
+    label: r/Entrepreneur
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [icp_voice, founder]
+    notes: "Entrepreneur community. ICP-adjacent — pain points, AI adoption sentiment, business challenges."
+  - id: reddit-startups
+    url: https://www.reddit.com/r/startups/
+    label: r/startups
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [icp_voice, founder]
+    notes: "Startup founder discussions. Early-stage AI adoption, pricing, and build-vs-buy decisions."
+  - id: reddit-indiehackers
+    url: https://www.reddit.com/r/indiehackers/
+    label: r/indiehackers
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [icp_voice, founder]
+    notes: "Solo/indie builders. Revenue discussions, AI tool usage, bootstrapping signals."
+  - id: reddit-sideproject
+    url: https://www.reddit.com/r/SideProject/
+    label: r/SideProject
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [icp_voice, builder]
+    notes: "Side project showcase. AI product launches, builder sentiment, early traction signals."
+
+  # --- AI Agents & LLM Development (core market intelligence) ---
+  - id: reddit-ai-agents
+    url: https://www.reddit.com/r/AI_Agents/
+    label: r/AI_Agents
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, ai_market]
+    notes: "AI agent builders. Framework discussions, deployment patterns, tool comparisons. Direct H002 intelligence."
+  - id: reddit-artificial
+    url: https://www.reddit.com/r/artificial/
+    label: r/artificial
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_market]
+    notes: "General AI industry discussion. Market trends, product launches, sentiment shifts."
+  - id: reddit-artificialintelligence
+    url: https://www.reddit.com/r/ArtificialInteligence/
+    label: r/ArtificialInteligence
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_market]
+    notes: "Broader AI discussion. Mainstream AI sentiment and adoption signals."
+  - id: reddit-llmdevs
+    url: https://www.reddit.com/r/LLMDevs/
+    label: r/LLMDevs
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "LLM developer community. RAG, agent frameworks, tool use patterns. Technical intelligence."
+  - id: reddit-localllama
+    url: https://www.reddit.com/r/LocalLLaMA/
+    label: r/LocalLLaMA
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_market, builder]
+    notes: "Local/open-source LLM community. Model releases, deployment patterns, cost optimization. Feeds H001."
+  - id: reddit-deeplearning
+    url: https://www.reddit.com/r/deeplearning/
+    label: r/deeplearning
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_market]
+    notes: "Deep learning research and applications. Technical frontier signals."
+  - id: reddit-rag
+    url: https://www.reddit.com/r/Rag/
+    label: r/Rag
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "RAG-specific community. Retrieval patterns, vector DB comparisons, production challenges."
+  - id: reddit-singularity
+    url: https://www.reddit.com/r/singularity/
+    label: r/singularity
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_market]
+    notes: "AI acceleration community. Frontier model releases, capability jumps, market implications."
+
+  # --- AI Tools & Coding (product ecosystem) ---
+  - id: reddit-claude-ai
+    url: https://www.reddit.com/r/ClaudeAI/
+    label: r/ClaudeAI
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "Claude user community. Use cases, prompt patterns, API discussions. AE's primary model ecosystem."
+  - id: reddit-claude-code
+    url: https://www.reddit.com/r/ClaudeCode/
+    label: r/ClaudeCode
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "Claude Code specific. Agentic coding workflows, MCP tools, development patterns."
+  - id: reddit-chatgpt-coding
+    url: https://www.reddit.com/r/ChatGPTCoding/
+    label: r/ChatGPTCoding
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "ChatGPT for coding. Competitor tool ecosystem, developer preferences, workflow patterns."
+  - id: reddit-autogpt
+    url: https://www.reddit.com/r/AutoGPT/
+    label: r/AutoGPT
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents]
+    notes: "AutoGPT / autonomous agent community. Agent framework adoption, DIY builder segment (H002/H007)."
+  - id: reddit-codex
+    url: https://www.reddit.com/r/codex/
+    label: r/codex
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "OpenAI Codex community. Agentic coding, competitor tool intelligence."
+  - id: reddit-vibecoding
+    url: https://www.reddit.com/r/vibecoding/
+    label: r/vibecoding
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "Vibe coding community. Non-technical AI-assisted development — direct ICP behavior signal."
+  - id: reddit-manus
+    url: https://www.reddit.com/r/ManusOfficial/
+    label: r/ManusOfficial
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents]
+    notes: "Manus AI agent platform. Competitor/substitute intelligence."
+  - id: reddit-prompt-engineering
+    url: https://www.reddit.com/r/PromptEngineering/
+    label: r/PromptEngineering
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_market, builder]
+    notes: "Prompt engineering community. Commoditization signals, DIY builder patterns."
+
+  # --- Automation (competitor landscape) ---
+  - id: reddit-ai-automations
+    url: https://www.reddit.com/r/AiAutomations/
+    label: r/AiAutomations
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, msp]
+    notes: "AI automation community. Direct competitor/substitute intelligence — DIY AI automation builders, agency discussions."
+  - id: reddit-automate
+    url: https://www.reddit.com/r/Automate/
+    label: r/Automate
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [ai_agents, builder]
+    notes: "Automation community. n8n, Zapier, Make.com comparisons. Substitute/competitor intelligence."
+
+  # --- Image/Media Gen (adjacent market) ---
+  - id: reddit-midjourney
+    url: https://www.reddit.com/r/midjourney/
+    label: r/midjourney
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [image_gen, ai_market]
+    notes: "Midjourney community. Creative AI adoption, client demand signals for visual AI services."
+  - id: reddit-stable-diffusion
+    url: https://www.reddit.com/r/StableDiffusion/
+    label: r/StableDiffusion
+    kind: reddit
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [image_gen, ai_market]
+    notes: "Stable Diffusion community. Open-source image gen, local deployment patterns."
+
+  - id: src-thesmmacademy
+    url: https://www.thesmmacademy.com/
+    label: The SMM Academy
+    kind: web_page
+    strategic_role: community_forum
+    health: unknown
+    status: active
+    tags: [competitor_training]
+    notes: "Social media marketing academy. Adjacent competitor training platform."

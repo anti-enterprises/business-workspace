@@ -1,0 +1,124 @@
+schema_version: "1"
+strategic_role: industry_signal
+sources:
+  - id: src-newsletter-neuron
+    url: https://www.theneurondaily.com
+    label: The Neuron
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: theneuron@newsletter.theneurondaily.com
+    notes: Daily AI industry news. Broad coverage of product launches, funding, and market shifts.
+  - id: src-newsletter-alphasignal
+    url: https://alphasignal.ai
+    label: AlphaSignal
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: news@alphasignal.ai
+    notes: Top AI news, papers, and repos. Curated daily digest of research and tooling.
+  - id: src-newsletter-ahead-of-ai
+    url: null
+    label: Ahead of AI
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: sebastianraschka@substack.com
+    notes: Sebastian Raschka's AI/ML research magazine. Deep technical coverage of model architectures and training.
+  - id: src-newsletter-import-ai
+    url: null
+    label: Import AI
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: importai@substack.com
+    notes: Jack Clark's AI policy and industry newsletter. Geopolitical and strategic AI landscape.
+  - id: src-newsletter-exponential-view
+    url: null
+    label: Exponential View
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: exponentialview@substack.com
+    notes: Azeem Azhar's tech/AI macro trends. Business strategy lens on exponential technologies.
+  - id: src-newsletter-algorithmic-bridge
+    url: null
+    label: The Algorithmic Bridge
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: thealgorithmicbridge@substack.com
+    notes: Alberto Romero's AI analysis. Critical thinking on AI capabilities and societal impact.
+  - id: src-newsletter-new-economies
+    url: null
+    label: NEW ECONOMIES
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: neweconomies@substack.com
+    notes: Technology trends reshaping industries and creating new markets.
+  - id: src-newsletter-gradient-ascent
+    url: null
+    label: Gradient Ascent
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: artofsaience@substack.com
+    notes: AI research and applications newsletter.
+  - id: src-newsletter-nlp-news
+    url: null
+    label: NLP News
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: nlpnewsletter@substack.com
+    notes: NLP/LLM research updates. Language model developments and benchmarks.
+  - id: src-newsletter-jam-with-ai
+    url: null
+    label: Jam with AI
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [market_signal]
+    sender: jamwithai@substack.com
+    notes: Shirin Khosravi's hands-on AI newsletter. Practical AI applications and tutorials.
+
+  # --- VC / Business Newsletters (subscribed 2026-04) ---
+  - id: src-nl-strictlyvc
+    url: null
+    label: StrictlyVC
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [vc_funding, market_signal]
+    sender: strictlyvc@techcrunch.com
+    notes: "TechCrunch's daily VC funding roundup. Concise, high signal. Track competitor funding and agentic economy investment."
+  - id: src-nl-morningbrew
+    url: null
+    label: Morning Brew
+    kind: newsletter
+    strategic_role: industry_signal
+    health: unknown
+    status: active
+    tags: [business, market_signal]
+    notes: "Daily business newsletter. Macro trends, markets, business news. General business intelligence for ICP context."

@@ -1,0 +1,19 @@
+# Build and package output
+node_modules/
+dist/
+build/
+coverage/
+.next/
+
+# Generated and local tooling output
+.git/
+.claude/
+.claude-flow/
+.gstack/
+graphify-out/
+
+# Logs and lock files
+*.log
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

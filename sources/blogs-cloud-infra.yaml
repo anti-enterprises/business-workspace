@@ -1,0 +1,348 @@
+schema_version: '1'
+strategic_role: industry_signal
+sources:
+- id: src-rss-aws-ml-blog
+  url: https://aws.amazon.com/blogs/machine-learning/
+  label: AWS ML Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  - daily_slot
+  feed_url: https://aws.amazon.com/blogs/machine-learning/feed/
+  notes: "AWS ML Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-google-cloud-ai-blog
+  url: https://cloud.google.com/blog/products/ai-machine-learning
+  label: Google Cloud AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  - daily_slot
+  feed_url: null
+  notes: "Google Cloud AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-azure-ai-foundry-blog
+  url: https://techcommunity.microsoft.com/category/azure-ai-foundry/blog/azure-ai-foundry-blog/
+  label: Azure AI Foundry Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  feed_url: null
+  notes: "Azure AI Foundry Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-oracle-ai-blog
+  url: https://blogs.oracle.com/ai-and-datascience/
+  label: Oracle AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "Oracle AI Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-ibm-ai-newsroom
+  url: https://newsroom.ibm.com/latest-news-artificial-intelligence
+  label: IBM AI Newsroom
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://newsroom.ibm.com/announcements?pagetemplate=rss
+  notes: "IBM AI Newsroom \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-cloudflare-ai
+  url: https://blog.cloudflare.com/tag/ai/
+  label: Cloudflare AI
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  - daily_slot
+  feed_url: https://blog.cloudflare.com/tag/ai/rss
+  notes: "Cloudflare AI \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-coreweave-blog
+  url: https://www.coreweave.com/blog-categories/blog
+  label: CoreWeave Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  feed_url: https://www.coreweave.com/blog/rss.xml
+  notes: "CoreWeave Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-crusoe-blog
+  url: https://www.crusoe.ai/blog
+  label: Crusoe Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "Crusoe Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-lambda-blog
+  url: https://lambda.ai/blog
+  label: Lambda Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://lambda.ai/blog/rss.xml
+  notes: "Lambda Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-vultr-blog
+  url: https://blogs.vultr.com/
+  label: Vultr Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  feed_url: https://blogs.vultr.com/rss.xml
+  notes: "Vultr Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-nebius-blog
+  url: https://nebius.com/blog
+  label: Nebius Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  feed_url: null
+  notes: "Nebius Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-runpod-blog
+  url: https://runpod.ghost.io/
+  label: RunPod Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://runpod.ghost.io/rss/
+  notes: "RunPod Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-gmi-cloud-blog
+  url: https://www.gmicloud.ai/blog
+  label: GMI Cloud Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "GMI Cloud Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-fluidstack-blog
+  url: https://www.fluidstack.io/about-us/blog
+  label: Fluidstack Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "Fluidstack Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-nscale-blog
+  url: https://www.nscale.com/blog
+  label: Nscale Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "Nscale Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-digitalocean-ai-blog
+  url: https://www.digitalocean.com/blog/tags/ai-ml
+  label: DigitalOcean AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://www.digitalocean.com/blog/rss
+  notes: "DigitalOcean AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-mongodb-ai-blog
+  url: https://www.mongodb.com/blog/category/artificial-intelligence
+  label: MongoDB AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://www.mongodb.com/blog/rss
+  notes: "MongoDB AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-elastic-search-labs
+  url: https://www.elastic.co/search-labs
+  label: Elastic Search Labs
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://www.elastic.co/blog/feed
+  notes: "Elastic Search Labs \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-pinecone-blog
+  url: https://www.pinecone.io/blog/
+  label: Pinecone Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - cloud_infra
+  - tier_0
+  - daily_slot
+  feed_url: https://www.pinecone.io/rss
+  notes: "Pinecone Blog \u2014 category leader for vector DB / RAG / knowledge-engine. Surfaces T04.1 memory, T04.2 RAG evolution,\
+    \ T06.10 agent runtime."
+- id: src-rss-weaviate-blog
+  url: https://weaviate.io/blog
+  label: Weaviate Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://weaviate.io/blog/rss.xml
+  notes: "Weaviate Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-chroma-blog
+  url: https://www.trychroma.com/blog
+  label: Chroma Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "Chroma Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-qdrant-blog
+  url: https://qdrant.tech/blog/
+  label: Qdrant Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://qdrant.tech/blog/index.xml
+  notes: "Qdrant Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-zilliz-blog
+  url: https://zilliz.com/blog
+  label: Zilliz Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: null
+  notes: "Zilliz Blog \u2014 RSS feed for industry signal monitoring."
+  spa_extraction:
+    enabled: true
+    max_posts_per_run: 8
+    post_age_days: 14
+- id: src-rss-redis-ai-blog
+  url: https://redis.io/blog/tag/ai/
+  label: Redis AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://redis.io/feed
+  notes: "Redis AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-supabase-ai-blog
+  url: https://supabase.com/blog/tags/ai
+  label: Supabase AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: healthy
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://supabase.com/feed.xml
+  notes: "Supabase AI Blog \u2014 RSS feed for industry signal monitoring."
+- id: src-rss-confluent-ai-blog
+  url: https://www.confluent.io/blog/tag/artificial-intelligence/
+  label: Confluent AI Blog
+  kind: rss
+  strategic_role: industry_signal
+  health: unknown
+  status: active
+  tags:
+  - cloud_infra
+  - tier_1
+  feed_url: https://www.confluent.io/rss.xml
+  notes: "Confluent AI Blog \u2014 RSS feed for industry signal monitoring."
